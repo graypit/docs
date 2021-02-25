@@ -86,7 +86,7 @@ There are three different kind of links, and each different kind of link has a s
 
 Sometimes we want to include other types of content such as `.pdf`'s. To add front matter to the pdf, create a sibling file with the pdf file name and an added extension of `.metadata`. This file can then define metadata for the title of the `.pdf`.
 
-An example can be seen in [digitalbits-core's software folder](https://github.com/xdbfoundation/tree/master/docs/software).
+An example can be seen in [digitalbits-core's software folder](https://github.com/xdbfoundation/DigitalBits/tree/master/docs/software).
 
 ## Contributing
 
