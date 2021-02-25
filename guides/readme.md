@@ -4,7 +4,7 @@ title: DigitalBits Development Guides
 
 These guides are designed to help you learn more about the technical aspects of integrating DigitalBits into your application or service, from [the very basics](./get-started) to more detailed topics like [submitting transactions at a high rate with channels](./channels.md).
 
-If you are looking for detailed documentation on DigitalBits’s HTTP API or client libraries for your favorite programming language, check out the [API Reference](../frontier/) section.
+If you are looking for detailed documentation on DigitalBits’s HTTP API or client libraries for your favorite programming language, check out the [API Reference](https://developer.digitalbits.io/reference/) section.
 
 Some guides are grouped together:
 
