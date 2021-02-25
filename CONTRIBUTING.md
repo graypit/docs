@@ -52,7 +52,6 @@ At this point you're waiting on us. We like to at least comment on pull requests
 business days (typically, one business day). We may suggest some changes, improvements or alternatives.
 
 # Additional Resources
-
 * [Contributor License Agreement](https://developer.digitalbits.io/contributor.html)
 
 
