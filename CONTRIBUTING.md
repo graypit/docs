@@ -54,8 +54,6 @@ business days (typically, one business day). We may suggest some changes, improv
 # Additional Resources
 
 * [Contributor License Agreement](https://developer.digitalbits.io/contributor.html)
-* [Explore the API](https://developer.digitalbits.io/learn/)
-* #dev channel on [Slack](https://slack.digitalbits.io)
 
 
 This document is inspired by:
