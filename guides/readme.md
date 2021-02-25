@@ -18,7 +18,7 @@ The Concepts section contains overviews and explanations of various objects, ter
 
 ## SDKs
 
-Looking for more details on DigitalBits’s client SDKs? You can find detailed documentation for each client SDK in the [API Reference](../frontier/) section.
+Looking for more details on DigitalBits’s client SDKs? You can find detailed documentation for each client SDK in the [API Reference](https://developer.digitalbits.io/reference/) section.
 
 ## Walkthroughs
 
