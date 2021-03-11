@@ -29,6 +29,3 @@ All these DigitalBits Cores—the network of nodes—eventually agree on sets of
 
 To help you test your tools and applications, Digitalbits.io operates a small test network and Frontier instance. [Get started with the testnet.](../concepts/test-net.md)
  
-<div class="sequence-navigation">
-  <a class="button button--next" href="create-account.html">Next: Create an Account</a>
-</div>
