@@ -9,9 +9,9 @@ Using the DigitalBits network, you can build mobile wallets, banking tools, smar
 
 **Most applications interact with the DigitalBits network through [Frontier](https://developer.digitalbits.io/frontier/reference/),** a RESTful HTTP API server. Frontier gives you a straightforward way to submit transactions, check accounts, and subscribe to events. Because it’s just HTTP, you can communicate with Frontier using your web browser, simple command line tools like cURL, or the DigitalBits SDK for your favorite programming language.
 
-The easiest way to install Frontier is by using [**DigitalBitsOrg/quickstart** docker image](https://hub.docker.com/r/DigitalBitsOrg/quickstart/).
+The easiest way to install Frontier is by using [**DigitalBits/quickstart** docker image](https://hub.docker.com/r/DigitalBitsOrg/quickstart/).
 
-Digitalbits.io maintains [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk), [Java](https://github.com/xdbfoundation/java-digitalbits-sdk), and [Go](https://github.com/xdbfoundation/go/tree/master/clients/frontier)-based SDKs for communicating with Frontier. There are also community-maintained SDKs for [Ruby](https://github.com/xdbfoundation/ruby-digitalbits-sdk), [Python](https://github.com/xdbfoundation/py-digitalbits-base), and [C#](https://github.com/xdbfoundation/csharp-digitalbits-base).
+Digitalbits.io maintains [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk) and [Go](https://github.com/xdbfoundation/go/tree/master/clients/frontier)-based SDKs for communicating with Frontier. There are also community-maintained SDKs for [Ruby](https://github.com/xdbfoundation/ruby-digitalbits-sdk), [Python](https://github.com/xdbfoundation/py-digitalbits-base), and [C#](https://github.com/xdbfoundation/csharp-digitalbits-base).
 
 ## Network Backbone: DigitalBits Core
 
