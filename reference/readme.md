@@ -13,12 +13,5 @@ To interact with Frontier use one of the following libraries:
 
 Libraries maintained by Digitalbits.io:<br />
 - [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk)
-- [Java](https://github.com/xdbfoundation/java-digitalbits-sdk)
 - [Go](https://github.com/xdbfoundation/go)
 
-Community-maintained libraries (in various states of completion) for interacting with Frontier in other languages:<br>
-- [Ruby](https://github.com/xdbfoundation/ruby-digitalbits-sdk)
-- [Python](https://github.com/xdbfoundation/py-digitalbits-base)
-- [C# .NET Core 2.0](https://github.com/xdbfoundation/dotnetcore-digitalbits-sdk)
-- [C#](https://github.com/xdbfoundation/csharp-digitalbits-base)
-- [C++](https://github.com/xdbfoundation/digitalbitsqore/)
