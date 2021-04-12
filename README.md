@@ -72,7 +72,7 @@ There are three different kind of links, and each different kind of link has a s
       <td>Absolute links</td>
       <td>
         <ul>
-          <li>cross repository links (should link to the dev portal at www.digitalbits.io/developers/)</li>
+          <li>cross repository links (should link to the dev portal at https://www.digitalbits.io/developers/)</li>
           <li>links to external sites (like https://www.google.com/)</li>
         </ul>
       </td>
