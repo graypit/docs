@@ -1,7 +1,7 @@
 DigitalBits Docs
 ============
 
-This repository is home to the DigitalBits documentation. These docs feed into the DigitalBits developers site builder and is on display at [digitalbits.io/developers](https://developer.digitalbits.io/).
+This repository is home to the DigitalBits documentation. These docs feed into the DigitalBits developers site builder and is on display at [developers.digitalbits.io](https://developer.digitalbits.io/).
 
 ## How to write docs
 
