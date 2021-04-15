@@ -35,7 +35,7 @@ Feel free to make your own issues if you think something needs to added or fixed
 
 ## Submitting Changes
 
-* [Sign the Contributor License Agreement](https://docs.google.com/forms/d/1g7EF6PERciwn7zfmfke5Sir2n10yddGGSXyZsq98tVY/viewform?usp=send_form)
+* [Sign the Contributor License Agreement](https://form.jotform.com/210566645558161)
 * All content, comments, and pull requests must follow the [DigitalBits Community Guidelines](https://www.digitalbits.io/community-guidelines/). 
 * Push your changes to a topic branch in your fork of the repository.
 * Submit a pull request to the repository for the project you’re working on in the DigitalBits organization.
@@ -55,11 +55,8 @@ appropriate to start the first line of a commit with 'doc' instead of
 an issue number.
 
 # Additional Resources
-* [Contributor License Agreement](https://docs.google.com/forms/d/1g7EF6PERciwn7zfmfke5Sir2n10yddGGSXyZsq98tVY/viewform?usp=send_form)
+* [Contributor License Agreement](https://form.jotform.com/210566645558161)
 * [Explore the API](https://developer.digitalbits.io/reference/)
-* #dev channel on [Slack](http://slack.digitalbits.io)
-* #digitalbits-dev IRC channel on freenode.org
-
 
 This document is inspired by:
 
