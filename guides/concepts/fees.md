@@ -61,4 +61,4 @@ For example, an account with 1 trustline and 2 offers would have a minimum balan
 
 The **base reserve** and **base fee** can change, but should not do so more than once every several years. For the most part, you can think of them as fixed values. When they are changed, the change works by the same consensus process as any transaction. For details, see [versioning](https://developer.digitalbits.io/guides/concepts/versioning.html).
 
-You can look up the current fees by [checking the details of the latest ledger](../../frontier/reference/endpoints/ledgers-single.md).
+<!--You can look up the current fees by [checking the details of the latest ledger](../../frontier/reference/endpoints/ledgers-single.md). -->
