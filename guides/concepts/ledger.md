@@ -6,7 +6,7 @@ A **ledger** represents the state of the DigitalBits universe at a given point i
 
 The first ledger in the history of the network is called the genesis ledger.
 
-Every [DigitalBits Consensus Protocol (SCP)](https://developer.digitalbits.io/guides/concepts/scp.html) round, the network reaches consensus on which [transaction set](./transactions.md#transaction-set) to apply to the last closed ledger; when the new set is applied, a new "last closed ledger" is defined.
+Every [DigitalBits Consensus Protocol (DCP)](https://developer.digitalbits.io/guides/concepts/scp.html) round, the network reaches consensus on which [transaction set](./transactions.md#transaction-set) to apply to the last closed ledger; when the new set is applied, a new "last closed ledger" is defined.
 
 Each ledger is cryptographically linked to a unique previous ledger, creating a historical ledger chain that goes back to the genesis ledger.
 
