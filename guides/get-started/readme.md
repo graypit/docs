@@ -9,15 +9,15 @@ Using the DigitalBits network, you can build mobile wallets, banking tools, smar
 
 **Most applications interact with the DigitalBits network through [Frontier](https://developer.digitalbits.io/frontier/reference/),** a RESTful HTTP API server. Frontier gives you a straightforward way to submit transactions, check accounts, and subscribe to events. Because it’s just HTTP, you can communicate with Frontier using your web browser, simple command line tools like cURL, or the DigitalBits SDK for your favorite programming language.
 
-The easiest way to install Frontier is by using [**DigitalBits/quickstart** docker image](https://hub.docker.com/r/DigitalBitsOrg/quickstart/).
+<!---The easiest way to install Frontier is by using [**DigitalBits/quickstart** docker image](https://hub.docker.com/r/DigitalBitsOrg/quickstart/). --->
 
-Digitalbits.io maintains [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk) and [Go](https://github.com/xdbfoundation/go/tree/master/clients/frontier)-based SDKs for communicating with Frontier. There are also community-maintained SDKs for [Ruby](https://github.com/xdbfoundation/ruby-digitalbits-sdk), [Python](https://github.com/xdbfoundation/py-digitalbits-base), and [C#](https://github.com/xdbfoundation/csharp-digitalbits-base).
+Digitalbits.io maintains [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk) and [Go](https://github.com/xdbfoundation/go/tree/master/clients/frontier)-based SDKs for communicating with Frontier. There are also community-maintained SDKs for [Ruby], [Python] and [C#].
 
 ## Network Backbone: DigitalBits Core
 
 Behind the scenes, every Frontier server connects to **[DigitalBits Core](../../digitalbits-core/software/admin.html), the backbone of the DigitalBits network.** The DigitalBits Core software does the hard work of validating and agreeing with other instances of Core on the status of every transaction through the [DigitalBits Consensus Protocol](../concepts/scp.html) (SCP). The DigitalBits network itself is a collection of connected DigitalBits Cores run by various individuals and entities around the world. Some instances have a Frontier server you can communicate with, while others exist only to add reliability to the overall network.
 
-The easiest way to install DigitalBits Core is by using [**DigitalBitsOrg/quickstart** docker image](https://hub.docker.com/r/DigitalBitsOrg/quickstart/).
+<!---The easiest way to install DigitalBits Core is by using [**DigitalBitsOrg/quickstart** docker image](https://hub.docker.com/r/DigitalBitsOrg/quickstart/). --->
 
 You might want to host your own instance of DigitalBits Core in order to submit transactions without depending on a third party, have more control over who to trust, or simply to help make the DigitalBits network more reliable and robust for others.
 
