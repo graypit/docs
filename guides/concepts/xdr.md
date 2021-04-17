@@ -17,5 +17,4 @@ In addition, the Frontier API server generally exposes the most important parts 
 ## .X files
 
 Data structures in XDR are specified in an _interface definition file_ (IDL).
-The IDL files used for the DigitalBits Network are available
-[on GitHub](https://github.com/xdbfoundation/tree/master/src/xdr).
+The IDL files used for the DigitalBits Network are available on Github.
