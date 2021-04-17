@@ -4,8 +4,6 @@ title: List of Operations
 
 For a description of how operations work in DigitalBits, see [Operations](./operations.md).
 
-For the protocol specification, see [DigitalBits-transactions.x](https://github.com/xdbfoundation/blob/master/src/xdr/DigitalBits-transaction.x).
-
 - [Create Account](#create-account)
 - [Payment](#payment)
 - [Path Payment](#path-payment)
