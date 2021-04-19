@@ -4,10 +4,10 @@ title: DigitalBits Tools
 # Tools
 
 ## [Lab](https://developer.digitalbits.io/lab/)
-The [DigitalBits Lab](https://developer.digitalbits.io/lab/) is an Interactive way to learn the DigitalBits API.  The source is available at [lab source code](https://github.com/xdbfoundation/laboratory).
+The [DigitalBits Lab](https://developer.digitalbits.io/lab/) is an Interactive way to learn the DigitalBits API.  <!-- The source is available at [lab source code](https://github.com/xdbfoundation/laboratory). -->
 
-## [Compliance protocol testing app](#)
-Interactive tool to test [compliance protocol](https://developer.digitalbits.io/guides/compliance-protocol.html) deployment.
+<!-- ## [Compliance protocol testing app](#) --> 
+<!-- Interactive tool to test [compliance protocol](https://developer.digitalbits.io/guides/compliance-protocol.html) deployment. -->
 
 # Reference applications and sample code
 
