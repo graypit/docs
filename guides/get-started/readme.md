@@ -13,7 +13,7 @@ Digitalbits.io maintains [JavaScript](https://github.com/xdbfoundation/js-digita
 
 ## Network Backbone: DigitalBits Core
 
-Behind the scenes, every Frontier server connects to **[DigitalBits Core](../../digitalbits-core/software/admin.html), the backbone of the DigitalBits network.** The DigitalBits Core software does the hard work of validating and agreeing with other instances of Core on the status of every transaction through the [DigitalBits Consensus Protocol](https://developer.digitalbits.io/guides/concepts/scp.html) (DCP). The DigitalBits network itself is a collection of connected DigitalBits Cores run by various individuals and entities around the world. Some instances have a Frontier server you can communicate with, while others exist only to add reliability to the overall network.
+Behind the scenes, every Frontier server connects to **[DigitalBits Core](https://github.com/xdbfoundation/DigitalBits), the backbone of the DigitalBits network.** The DigitalBits Core software does the hard work of validating and agreeing with other instances of Core on the status of every transaction through the [DigitalBits Consensus Protocol](https://developer.digitalbits.io/guides/concepts/scp.html) (DCP). The DigitalBits network itself is a collection of connected DigitalBits Cores run by various individuals and entities around the world. Some instances have a Frontier server you can communicate with, while others exist only to add reliability to the overall network.
 
 <!-- The easiest way to install DigitalBits Core is by using [**DigitalBitsOrg/quickstart** docker image](https://hub.docker.com/r/DigitalBitsOrg/quickstart/). -->
 
