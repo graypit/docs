@@ -321,6 +321,6 @@ try {
 After running the above code, your callback server should have logged information about the payment.
 
 <nav class="sequence-navigation">
-  <a rel="prev" href="./">Back: Architecture</a>
+  <a rel="prev" href="readme.md">Back: Architecture</a>
   <a rel="next" href="3-federation-server.md">Next: Federation Server</a>
 </nav>
