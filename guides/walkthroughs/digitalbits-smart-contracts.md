@@ -54,7 +54,7 @@ Five transactions are used to create an escrow contract - they are explained bel
 
 For the design pattern described below, the asset being exchanged are the native asset. The order of submission of transaction to the DigitalBits network different from the order of creation. The following shows this alternative order, in respect to time: 
 
-![Diagram Transaction Submission Order for Escrow Agreements](assets/TBD.png)
+![Diagram Transaction Submission Order for Escrow Agreements](assets/ssc-escrow.png)
 
 #### Transaction 1: Creating the Escrow Account
 **Account**: source account  
@@ -161,7 +161,7 @@ There are four accounts used for creating a basic crowdfunding schema. First is 
 
 The transactions that create this design pattern can be created and submitted by any party sponsoring the crowdfunding campaign. The transactions are presented in order of creation. The order of submission to the DigitalBits Network is conditional, and depends on the success of the crowdfunding campaign.
 
-![Diagram Transaction Submission Order for Crowdfunding Campaigns](assets/TBD.png)
+![Diagram Transaction Submission Order for Crowdfunding Campaigns](assets/ssc-crowdfunding.png)
 
 
 #### Transaction 1: Create the Holding Account
