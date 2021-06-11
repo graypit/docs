@@ -12,6 +12,6 @@ Digitalbits.io runs an [instance of Frontier](https://frontier.testnet.digitalbi
 To interact with Frontier use one of the following libraries:
 
 Libraries maintained by Digitalbits.io:<br />
-- [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk)
+- [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk) <br />
 - [Go](https://github.com/xdbfoundation/go)
 
