@@ -5,7 +5,7 @@ title: DigitalBits Software
 
 Pre-built software and services you can run on your own infrastructure, provided by Digitalbits.io.
 
-## [DigitalBits Core](../digitalbits-core/software/admin.html)
+## [DigitalBits Core](https://github.com/xdbfoundation/DigitalBits)
 DigitalBits Core is the backbone of the DigitalBits network and does the hard work of validating and agreeing on the status of every transaction with other instances of Core through the DigitalBits Consensus Protocol (DCP).
 
 ## [Frontier](https://github.com/xdbfoundation/go/tree/master/services/frontier)
