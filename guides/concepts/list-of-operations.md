@@ -2,7 +2,7 @@
 title: List of Operations
 ---
 
-For a description of how operations work in DigitalBits, see [Operations](./operations.md).
+For a description of how operations work in DigitalBits, see [Operations](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/operations.md).
 
 - [Create Account](#create-account)
 - [Payment](#payment)
@@ -70,7 +70,7 @@ Possible errors:
 |PAYMENT_SRC_NO_TRUST| -3| The source account does not trust the issuer of the asset it is trying to send.|
 |PAYMENT_SRC_NOT_AUTHORIZED| -4| The source account is not authorized to send this payment.|
 |PAYMENT_NO_DESTINATION| -5| The receiving account does not exist.|
-|PAYMENT_NO_TRUST| -6| The receiver does not trust the issuer of the asset being sent. For more information, see the [assets doc](./assets.md).|
+|PAYMENT_NO_TRUST| -6| The receiver does not trust the issuer of the asset being sent. For more information, see the [assets doc](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/assets.md).|
 |PAYMENT_NOT_AUTHORIZED| -7| The destination account is not authorized by the asset's issuer to hold the asset.|
 |PAYMENT_LINE_FULL| -8| The receiving account only trusts an asset's issuer for a certain amount of credit.  If this transaction succeeded, the receiver's trust limit would be exceeded.|
 |PAYMENT_NO_ISSUER| -9| The issuer of the asset does not exist.|
@@ -104,7 +104,7 @@ Possible errors:
 |PATH_PAYMENT_SRC_NO_TRUST| -3| The source account does not trust the issuer of the asset it is trying to send.|
 |PATH_PAYMENT_SRC_NOT_AUTHORIZED| -4| The source account is not authorized to send this payment. |
 |PATH_PAYMENT_NO_DESTINATION| -5| The receiving account does not exist. |
-|PATH_PAYMENT_NO_TRUST| -6| The receiver does not trust the issuer of the asset being sent. For more, see the [assets doc](./assets.md).|
+|PATH_PAYMENT_NO_TRUST| -6| The receiver does not trust the issuer of the asset being sent. For more, see the [assets doc](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/assets.md).|
 |PATH_PAYMENT_NOT_AUTHORIZED| -7| The destination account is not authorized by the asset's issuer to hold the asset. |
 |PATH_PAYMENT_LINE_FULL| -8| The receiving account only trusts an asset's issuer for a certain amount of credit.  If this transaction succeeded, the receiver's trust limit would be exceeded.|
 |PATH_PAYMENT_NO_ISSUER| -9| The issuer on one of assets is missing.|
@@ -202,7 +202,7 @@ Possible errors:
 
 This operation sets the options for an account.
 
-For more information on the signing options, please refer to the [multi-sig doc](./multi-sig.md).
+For more information on the signing options, please refer to the [multi-sig doc](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.md).
 
 When updating signers or other thresholds, the threshold of this operation is high.
 
@@ -214,13 +214,13 @@ Parameters:
 
 |Parameters| Type| Description|
 | --- | --- | --- |
-|Clear flags| integer| Indicates which flags to clear. For details about the flags, please refer to the [accounts doc](./accounts.md). The bit mask integer subtracts from the existing flags of the account. This allows for setting specific bits without knowledge of existing flags.|
-|Set flags| integer| Indicates which flags to set. For details about the flags, please refer to the [accounts doc](./accounts.md). The bit mask integer adds onto the existing flags of the account. This allows for setting specific bits without knowledge of existing flags.|
+|Clear flags| integer| Indicates which flags to clear. For details about the flags, please refer to the [accounts doc](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/accounts.md). The bit mask integer subtracts from the existing flags of the account. This allows for setting specific bits without knowledge of existing flags.|
+|Set flags| integer| Indicates which flags to set. For details about the flags, please refer to the [accounts doc](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/accounts.md). The bit mask integer adds onto the existing flags of the account. This allows for setting specific bits without knowledge of existing flags.|
 |Master weight| integer| Weight of the master key. This account may also add other keys with which to sign transactions using `signer` below.|
-|Low threshold| integer| A number from 0-255 representing the threshold this account sets on all operations it performs that have [a low threshold](./multi-sig.html).|
-|Medium threshold| integer| A number from 0-255 representing the threshold this account sets on all operations it performs that have [a medium threshold](./multi-sig.html).|
-|High threshold| integer| A number from 0-255 representing the threshold this account sets on all operations it performs that have [a high threshold](./multi-sig.html). |
-|Home domain| string| Sets the home domain of an account. See [Federation](./federation.md).|
+|Low threshold| integer| A number from 0-255 representing the threshold this account sets on all operations it performs that have [a low threshold](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.html).|
+|Medium threshold| integer| A number from 0-255 representing the threshold this account sets on all operations it performs that have [a medium threshold](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.html).|
+|High threshold| integer| A number from 0-255 representing the threshold this account sets on all operations it performs that have [a high threshold](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.html). |
+|Home domain| string| Sets the home domain of an account. See [Federation](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/federation.md).|
 |Signer| {Public Key, weight}| Add, update, or remove a signer from an account.  The signer is deleted if the weight is 0.|
 
 Possible errors:
@@ -239,7 +239,7 @@ Possible errors:
 ## Change Trust
 [JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.changeTrust) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/ChangeTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ChangeTrustBuilder)
 
-Creates, updates, or deletes a trustline.  For more on trustlines, please refer to the [assets documentation](./assets.md).
+Creates, updates, or deletes a trustline.  For more on trustlines, please refer to the [assets documentation](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/assets.md).
 
 Threshold: Medium
 
@@ -264,7 +264,7 @@ Possible errors:
 ## Allow Trust
 [JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.allowTrust) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/AllowTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#AllowTrustBuilder)
 
-Updates the `authorized` flag of an existing trustline. This can only be called by the issuer of a trustline's [asset](./assets.md).
+Updates the `authorized` flag of an existing trustline. This can only be called by the issuer of a trustline's [asset](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/assets.md).
 
 The issuer can only clear the `authorized` flag if the issuer has the `AUTH_REVOCABLE_FLAG` set. Otherwise, the issuer can only set the `authorized` flag.
 

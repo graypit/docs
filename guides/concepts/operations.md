@@ -2,20 +2,20 @@
 title: Operations
 ---
 
-[Transactions](./transactions.md) are made up of a [list of operations](./list-of-operations.md). Each
+[Transactions](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/transactions.md) are made up of a [list of operations](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md). Each
 operation is an individual command that mutates the ledger.
 
 Here are the possible operation types:
-- [Create Account](./list-of-operations.md#create-account)
-- [Payment](./list-of-operations.md#payment)
-- [Path Payment](./list-of-operations.md#path-payment)
-- [Manage Offer](./list-of-operations.md#manage-offer)
-- [Create Passive Offer](./list-of-operations.md#create-passive-offer)
-- [Set Options](./list-of-operations.md#set-options)
-- [Change Trust](./list-of-operations.md#change-trust)
-- [Allow Trust](./list-of-operations.md#allow-trust)
-- [Account Merge](./list-of-operations.md#account-merge)
-- [Manage Data](./list-of-operations.md#manage-data)
+- [Create Account](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#create-account)
+- [Payment](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#payment)
+- [Path Payment](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#path-payment)
+- [Manage Offer](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#manage-offer)
+- [Create Passive Offer](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#create-passive-offer)
+- [Set Options](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#set-options)
+- [Change Trust](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#change-trust)
+- [Allow Trust](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#allow-trust)
+- [Account Merge](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#account-merge)
+- [Manage Data](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#manage-data)
 
 Operations are executed on behalf of the source account specified in the
 transaction, unless there is an override defined for the operation.
@@ -37,7 +37,7 @@ Thresholds define the level of privilege an operation needs in order to succeed.
 
 ## Validity of an operation
 
-There are two places in a [transaction life cycle](./transactions.md#life-cycle) when operations can fail. The first time is when a transaction is submitted to the network. The node to which the transaction is submitted checks the validity of the operation: in the **validity check**, the node performs some cursory checks to make sure the transaction is properly formed before including it in its transaction set and forwarding the transaction to the rest of the network.
+There are two places in a [transaction life cycle](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/transactions.md#life-cycle) when operations can fail. The first time is when a transaction is submitted to the network. The node to which the transaction is submitted checks the validity of the operation: in the **validity check**, the node performs some cursory checks to make sure the transaction is properly formed before including it in its transaction set and forwarding the transaction to the rest of the network.
 
 The validity check only looks at the state of the source account. It ensures that:
 1) the outer transaction has enough signatures for the source account of the operation to meet the threshold for that operation.
@@ -85,11 +85,11 @@ Other, more complex ways of submitting this transaction are possible, but signin
 
 ### 2. Workers
 
-   An anchor wants to divide the processing of their online ("base") account between machines. That way, each machine will submit transactions from its local account and keep track of its own sequence number. For more on transaction sequence numbers, please refer to [the transactions doc](./transactions.md).
+   An anchor wants to divide the processing of their online ("base") account between machines. That way, each machine will submit transactions from its local account and keep track of its own sequence number. For more on transaction sequence numbers, please refer to [the transactions doc](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/transactions.md).
 
    * Each machine gets a private/key pair associated with it. Let's say there are only 3 machines: Machine_1, Machine_2, and Machine_3. (In practice, there can be as many machines as the anchor wants.)
    * All three machines are added as Signers to the anchor's base account "baseAccount", with
-     a weight that gives them medium rights. The worker machines can then sign on behalf of the base account. (For more on signing, please refer to the [multisig documentation](multi-sig.md).)
+     a weight that gives them medium rights. The worker machines can then sign on behalf of the base account. (For more on signing, please refer to the [multisig documentation](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.md).)
    * When a machine (say Machine_2) wants to submit a transaction to the network, it constructs the transaction:
       * source=_public key for Machine_2_
       * sequence number=_sequence number of Machine_2's account_
@@ -98,7 +98,7 @@ Other, more complex ways of submitting this transaction are possible, but signin
         * Payment send an asset --> destination account
    * sign it with the private key of Machine_2.
 
-   The benefit of this scheme is that each machine can increment its sequence number and submit a transaction without invalidating any transactions submitted by the other machines.  Recall from the [transactions doc](transactions.md) that all transactions from a source account have their own specific sequence number.  Using worker machines, each with an account, allows this anchor to submit as many transactions as possible without sequence number collisions.
+   The benefit of this scheme is that each machine can increment its sequence number and submit a transaction without invalidating any transactions submitted by the other machines.  Recall from the [transactions doc](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/transactions.md) that all transactions from a source account have their own specific sequence number.  Using worker machines, each with an account, allows this anchor to submit as many transactions as possible without sequence number collisions.
 
 ### 3. Long-lived transactions
 

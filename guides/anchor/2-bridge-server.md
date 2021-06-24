@@ -79,7 +79,7 @@ Now that your database is fully set up, you can start the bridge server by runni
 
 ## Send a Payment
 
-The bridge server takes commands in the form of HTTP requests, so we can test submitting a payment by sending a `POST` request to `/payments`. Try sending 1 USD to the account `GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB`. (Remember that the receiving account will need to trust the asset first. See [issuing assets](../issuing-assets.md) for more details.)
+The bridge server takes commands in the form of HTTP requests, so we can test submitting a payment by sending a `POST` request to `/payments`. Try sending 1 USD to the account `GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB`. (Remember that the receiving account will need to trust the asset first. See [issuing assets](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../issuing-assets.md) for more details.)
 
 <code-example name="Send a Payment">
 
@@ -254,7 +254,7 @@ public class DigitalBitsCallbacks {
 
 </code-example>
 
-To test that your receive callback works, let’s try sending 1 USD to a customer with the account name `Amy` at your bank. (For a review of sending payments using the API, check [step 3 of “get started”](../get-started/transactions.md).)
+To test that your receive callback works, let’s try sending 1 USD to a customer with the account name `Amy` at your bank. (For a review of sending payments using the API, check [step 3 of “get started”](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../get-started/transactions.md).)
 
 <code-example name="Test Receive Callback">
 

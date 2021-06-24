@@ -3,7 +3,7 @@ DigitalBits.io doesn't currently run a validator. We do run a couple nodes recor
 If you would like to run a validator please:
  <!-- - Read the [admin guide](https://developer.digitalbits.io/digitalbits-core/learn/admin.html). -->
  <!-- - Join the #validators channel on [our slack](http://slack.digitalbits.io). -->
- - See the [example config](./other/digitalbits-core-validator-example.cfg) for setting up your validator.
+ - See the [example config](https://github.com/xdbfoundation/docs/tree/master/other/digitalbits-core-validator-example.cfg) for setting up your validator.
  - Start your node.
  - Open a pull request to list it here.
 

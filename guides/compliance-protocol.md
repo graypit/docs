@@ -33,8 +33,8 @@ Name | Data Type | Description
 -----|-----------|------------
 `sender` | string | The payment address of the customer that is initiating the send. Ex. `bob*bank.com`
 `need_info` | boolean | If the caller needs the recipient's AML info in order to send the payment.
-`tx` | string: base64 encoded [xdr.Transaction](https://github.com/xdbfoundation/blob/4961b8bb4a64c68838632c5865389867e9f02840/src/xdr/digitalbits-transaction.x#L297-L322) | The transaction that the sender would like to send in XDR format. This transaction is unsigned and it's sequence number should be equal `0`.
-`attachment` | string | The full text of the attachment. The hash of this attachment is included as a memo in the transaction. The **attachment** field follows the [DigitalBits Attachment Convention](./attachment.md) and should contain at least enough information of the sender to allow the receiving FI to do their sanction check.
+`tx` | string: base64 encoded [xdr.Transaction](https://github.com/xdbfoundation/DigitalBits/blob/master/src/xdr/DigitalBits-transaction.x#L297-L322) | The transaction that the sender would like to send in XDR format. This transaction is unsigned and it's sequence number should be equal `0`.
+`attachment` | string | The full text of the attachment. The hash of this attachment is included as a memo in the transaction. The **attachment** field follows the [DigitalBits Attachment Convention](https://github.com/xdbfoundation/docs/tree/master/guides/attachment.md) and should contain at least enough information of the sender to allow the receiving FI to do their sanction check.
 
 **sig** is the signature of the data block made by the sending FI. The receiving institution should check that this signature is valid against the public signature key that is posted in the sending FI's [digitalbits.toml](https://developer.digitalbits.io/guides/concepts/digitalbits-toml.html) (`SIGNING_KEY` field).
 

@@ -7,7 +7,7 @@ sequence:
 
 When testing the bridge server, we added a `memo` to the transaction in order to identify what customer account to credit. However, other people and organizations using DigitalBits might not know they need to do that. How do they find out?
 
-The [DigitalBits federation protocol](../concepts/federation.md) allows you to convert a human-readable address like `amy*your_org.com`[^friendly_names] to an account ID. It also includes information about what should be in a transaction’s `memo`. When sending a payment, you contact a federation server first to determine what DigitalBits account ID to pay. Luckily, the bridge server does this for you.
+The [DigitalBits federation protocol](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/federation.md) allows you to convert a human-readable address like `amy*your_org.com`[^friendly_names] to an account ID. It also includes information about what should be in a transaction’s `memo`. When sending a payment, you contact a federation server first to determine what DigitalBits account ID to pay. Luckily, the bridge server does this for you.
 
 ![Payment flow diagram](assets/Federation-Server-Diagram-v2.png)
 
@@ -75,7 +75,7 @@ Now run the server! (Unlike the bridge server, there’s there no custom databas
 
 ## Update DigitalBits.toml
 
-Finally, others have to know the URL of your federation server. The [`digitalbits.toml` file](../concepts/digitalbits-toml.md) is publicly available file where others can find information about your DigitalBits integration. It should always be stored at:
+Finally, others have to know the URL of your federation server. The [`digitalbits.toml` file](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/digitalbits-toml.md) is publicly available file where others can find information about your DigitalBits integration. It should always be stored at:
 
 `https://[YOUR DOMAIN]/.well-known/digitalbits.toml`
 

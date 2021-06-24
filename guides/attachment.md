@@ -4,7 +4,7 @@ title: DigitalBits Attachment Convention
 
 # Attachments
 
-Sometimes there is a need to send more information about a transaction than fits in the provided memo field, for example: KYC info, an invoice, a short note. Such data shouldn't be placed in the [ledger](./concepts/ledger.md) because of it's size or private nature. Instead, you should create what we call an `Attachment`. A DigitalBits attachment is simply a JSON document. The sha256 hash of this attachment is included as a memo hash in the transaction. The actual attachment document can be sent to the receiver through some other channel, most likely through the receiver's [Auth server](./compliance-protocol.md).
+Sometimes there is a need to send more information about a transaction than fits in the provided memo field, for example: KYC info, an invoice, a short note. Such data shouldn't be placed in the [ledger](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/ledger.md) because of it's size or private nature. Instead, you should create what we call an `Attachment`. A DigitalBits attachment is simply a JSON document. The sha256 hash of this attachment is included as a memo hash in the transaction. The actual attachment document can be sent to the receiver through some other channel, most likely through the receiver's [Auth server](https://github.com/xdbfoundation/docs/tree/master/guides/compliance-protocol.md).
 
 ## Attachment structure
 
@@ -66,7 +66,7 @@ To add the hash to your transaction use the [`TransactionBuilder.addMemo`](http:
 
 ## Sending Attachments
 
-To send an Attachment and its hash (in a transaction) to Auth server of a receiving organization read the [Compliance protocol](./compliance-protocol.md) doc for more information.
+To send an Attachment and its hash (in a transaction) to Auth server of a receiving organization read the [Compliance protocol](https://github.com/xdbfoundation/docs/tree/master/guides/compliance-protocol.md) doc for more information.
 
 ## Example
 
