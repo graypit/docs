@@ -12,37 +12,37 @@ key schemes. A transaction with an attached signature is considered to have auth
 
 In two cases, a transaction may need more than one signature. If the transaction has operations that affect more than one
 account, it will need authorization from every account in question. A transaction will also need additional signatures if
-the account associated with the transaction has multiple public keys. For examples, see the [operations guide](./operations.md#examples).
+the account associated with the transaction has multiple public keys. For examples, see the [operations guide](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/operations.md#examples).
 
 ## Thresholds
-[Operations](./operations.md) fall under a specific threshold category: low, medium, or high.
+[Operations](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/operations.md) fall under a specific threshold category: low, medium, or high.
 The threshold for a given level can be set to any number from 0-255. This threshold is the amount of signature weight required to authorize an operation at that level.
 
 Let's say Diyang sets the medium threshold on one of her accounts to 4. If that account submits a transaction that includes a payment operation (medium security), the transaction's threshold is 4--the signature weights on it need to be greater than or equal to 4 in order to run. If Diyang's master key--the key corresponding to the public key that identifies the account she owns--has a weight less than 4, she cannot authorize a transaction without other signers.
 
-Each account can set its own threshold values. By default all thresholds levels are set to 0, and the master key is set to weight 1. The [Set Options](./list-of-operations.md#set-options) operation allows you to change the weight of the master key and to add other signing keys with different weights.
+Each account can set its own threshold values. By default all thresholds levels are set to 0, and the master key is set to weight 1. The [Set Options](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#set-options) operation allows you to change the weight of the master key and to add other signing keys with different weights.
 
 Low Security:
- * [Allow Trust](./list-of-operations.md#allow-trust) operation
+ * [Allow Trust](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#allow-trust) operation
  * Used to allow people to hold credit from this account without exposing the key that enables sending payments from this account.
 
 Medium Security:
  * All other operations
 
 High Security:
- * [Set Options](./list-of-operations.md#set-options) to change the signers or the thresholds
+ * [Set Options](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#set-options) to change the signers or the thresholds
  * Allows you to create a set of signers that give or revoke access to the account.
 
 
 
 ## Additional signing keys
-Accounts are identified by a public key. The private key that corresponds to this public key is called the **master key**. Additional signing keys can be added to the account using the [Set Options](./list-of-operations.md#set-options) operation.
+Accounts are identified by a public key. The private key that corresponds to this public key is called the **master key**. Additional signing keys can be added to the account using the [Set Options](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#set-options) operation.
 
 If the weight of the master key is ever updated to 0, the master key is considered to be an invalid key and you cannot sign any transactions with it (even for operations with a threshold value of 0). If there are other signers listed on the account, they can still continue to sign transactions.
 
 "Signers" refers to the master key or to any signing keys added later. A signer is defined as the pair: public key, weight.
 
-Each additional signer beyond the master key increases the account's [minimum balance](./fees.md#minimum-account-balance).
+Each additional signer beyond the master key increases the account's [minimum balance](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/fees.md#minimum-account-balance).
 
 ## Alternate Signature Types
 To enable some advanced smart contract features there are a couple of additional signature types. These signature types also have weights and can be added and removed similarly to normal signature types. But rather than check a cryptographic signature for authorization they have a different method of proving validity to the network.
@@ -50,7 +50,7 @@ To enable some advanced smart contract features there are a couple of additional
 ### Pre-authorized Transaction
 It is possible for an account to pre-authorize a particular transaction by adding the hash of the future transaction as a "signer" on the account. To do that you need to prepare the transaction beforehand with proper sequence number. Then you can obtain the hash of this transaction and add it as signer to account.
 
-Signers of this type are automatically removed from the account when a matching transaction is properly applied. In case of error, or when matching transaction is never submitted, the signer remains and must be manually removed using the [Set Options](./list-of-operations.md#set-options) operation.
+Signers of this type are automatically removed from the account when a matching transaction is properly applied. In case of error, or when matching transaction is never submitted, the signer remains and must be manually removed using the [Set Options](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#set-options) operation.
 
 This type of signer is especially useful in escrow accounts. You can pre-authorize two different transactions. Both could have the same sequence number but different destinations. This means that only one of them can be executed.
 

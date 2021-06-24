@@ -275,9 +275,9 @@ function submitPendingTransactions(exchangeAccount) {
 ### Federation
 The federation protocol allows you to give your users easy addresses—e.g., bob*yourexchange.com—rather than cumbersome raw addresses such as: GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGSNFHEYVXM3XOJMDS674JZ?19327
 
-For more information, check out the [federation guide](./concepts/federation.md).
+For more information, check out the [federation guide](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/federation.md).
 
 ### Anchor
 If you're an exchange, it's easy to become a DigitalBits anchor as well. The integration points are very similar, with the same level of difficulty. Becoming a anchor could potentially expand your business.
 
-To learn more about what it means to be an anchor, see the [anchor guide](./anchor/readme.md).
+To learn more about what it means to be an anchor, see the [anchor guide](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/readme.md).

@@ -3,11 +3,11 @@ title: Distributed Exchange
 ---
 
 
-In addition to supporting the issuing and movement of [assets](./assets.md), the DigitalBits network also acts as a decentralized **distributed exchange**
+In addition to supporting the issuing and movement of [assets](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/assets.md), the DigitalBits network also acts as a decentralized **distributed exchange**
 of any type of asset that people have added to the network. Its ledger stores both balances held by user accounts and offers that user accounts make to buy or sell assets.
 
 ## Offers
-An account can make offers to buy or sell assets using the [Manage Offer](./list-of-operations.md#manage-offer) operation.
+An account can make offers to buy or sell assets using the [Manage Offer](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#manage-offer) operation.
 In order to make an offer, the account must hold the asset it wants to sell. Similarly, the account must trust the issuer of the asset it's trying to buy.
 
 When an account makes an offer, the offer is checked against the existing orderbook for that asset pair. If the offer crosses

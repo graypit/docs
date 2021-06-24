@@ -3,13 +3,13 @@ title: Accounts
 ---
 
 Accounts are the central data structure in DigitalBits. Accounts are identified by a public key and saved in the ledger.
-Everything else in the ledger, such as offers or [trustlines](./assets.md#trustlines), are owned by a particular account.
+Everything else in the ledger, such as offers or [trustlines](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/assets.md#trustlines), are owned by a particular account.
 
-Accounts are created with the [Create Account](./list-of-operations.md#create-account) operation.
+Accounts are created with the [Create Account](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/list-of-operations.md#create-account) operation.
 
 Account access is controlled by public/private key cryptography. For an account to perform a transaction--e.g., make a
 payment--the transaction must be signed by the private key that corresponds to that account's public key. You can also
-set up more complicated [multi-signature](./multi-sig.md) schemes for authorizing transactions on an account.
+set up more complicated [multi-signature](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.md) schemes for authorizing transactions on an account.
 
 
 ## Account fields
@@ -26,23 +26,23 @@ Accounts have the following fields:
 > The current transaction sequence number of the account. This number starts equal to the ledger number at which the account was created.
 >
 > #### Number of subentries
-> Number of other [entries](./ledger.md#ledger-entries) the account owns. This number is used to calculate the account's [minimum balance](./fees.md#minimum-account-balance).
+> Number of other [entries](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/ledger.md#ledger-entries) the account owns. This number is used to calculate the account's [minimum balance](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/fees.md#minimum-account-balance).
 >
 > #### Flags
-> Currently there are three flags, used by issuers of [assets](./assets.md).
+> Currently there are three flags, used by issuers of [assets](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/assets.md).
 >
 >   - **Authorization required (0x1)**: Requires the issuing account to give other accounts permission before they can hold the issuing account's credit.
 >   - **Authorization revocable (0x2)**: Allows the issuing account to revoke its credit held by other accounts.
 >   - **Authorization immutable (0x4)**: If this is set then none of the authorization flags can be set and the account can never be deleted.
 >
 > #### Home domain
-> A domain name that can optionally be added to the account. Clients can look up a [digitalbits.toml](./digitalbits-toml.md) from this domain. This should be in the format of a [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) such as `example.com`.
+> A domain name that can optionally be added to the account. Clients can look up a [digitalbits.toml](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/digitalbits-toml.md) from this domain. This should be in the format of a [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) such as `example.com`.
 >
-> The federation protocol can use the home domain to look up more details about a transaction's memo or [address](https://developer.digitalbits.io/guides/concepts/federation.html#digitalbits-addresses) details about an account. For more on federation, see the [federation guide](./federation.md).
+> The federation protocol can use the home domain to look up more details about a transaction's memo or [address](https://developer.digitalbits.io/guides/concepts/federation.html#digitalbits-addresses) details about an account. For more on federation, see the [federation guide](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/federation.md).
 >
 >
 > #### Thresholds
-> Operations have varying levels of access. This field specifies thresholds for low-, medium-, and high-access levels, as well as the weight of the master key. For more info, see [multi-sig](./multi-sig.md).
+> Operations have varying levels of access. This field specifies thresholds for low-, medium-, and high-access levels, as well as the weight of the master key. For more info, see [multi-sig](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.md).
 >
 > #### Signers
-> Used for [multi-sig](./multi-sig.md). This field lists other public keys and their weights, which can be used to authorize transactions for this account.
+> Used for [multi-sig](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/multi-sig.md). This field lists other public keys and their weights, which can be used to authorize transactions for this account.
