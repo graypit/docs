@@ -20,7 +20,7 @@ As an anchor, you should maintain at least two accounts:
 - An **issuing account** used only for issuing and destroying assets.
 - A **base account** used to transact with other DigitalBits accounts. It holds a balance of assets issued by the *issuing account*.
 
-Create them on the test network using the [laboratory](https://developer.digitalbits.io/lab/) or the steps from the [“get started” guide](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../get-started/create-account.md).
+Create them on the test network using the [laboratory](https://laboratory.livenet.digitalbits.io) or the steps from the [“get started” guide](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../get-started/create-account.md).
 
 For this guide, we’ll use the following keys:
 

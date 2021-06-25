@@ -3,8 +3,8 @@ title: DigitalBits Tools
 ---
 # Tools
 
-## [Lab](https://developers.digitalbits.io/lab/)
-The [DigitalBits Lab](https://developers.digitalbits.io/lab/) is an Interactive way to learn the DigitalBits API. 
+## [Lab](https://laboratory.livenet.digitalbits.io/)
+The [DigitalBits Lab](https://laboratory.livenet.digitalbits.io/) is an Interactive way to learn the DigitalBits API. 
 
 # Reference applications and sample code
 

@@ -28,7 +28,7 @@ The concept of sequence is represented on the DigitalBits Network through sequen
 
 Time bounds are limitations on the time period over which a transaction is valid. Using time bounds enables time periods to be represented in an DSC. 
 
-This overview presents two common design patterns that can be used to create DSCs on the DigitalBits Network. The transactions can be translated to API requests or can be executed using [DigitalBits Laboratory](https://developer.digitalbits.io/lab/).
+This overview presents two common design patterns that can be used to create DSCs on the DigitalBits Network. The transactions can be translated to API requests or can be executed using [DigitalBits Laboratory](https://laboratory.livenet.digitalbits.io/).
 
 
 ## 2-Party Multisignature Escrow Account with Time Lock & Recovery
@@ -122,7 +122,7 @@ By default, the thresholds are uneven. The second operation sets the weight of t
 **Immediate Signer**: escrow account  
 **Eventual Signer**: destination account  
 
-Transaction 3 and Transaction 4 are created and signed by the escrow account by the origin. The origin then gives the transaction, in [XDR form](https://developer.digitalbits.io/frontier/reference/xdr.html), to the target to sign using the destination account. The target then publishes them for the origin to [review](https://developer.digitalbits.io/lab/#xdr-viewer?type=TransactionEnvelope&network=test) and save in a safe location. Once signed by both parties, these transactions cannot be modified. Both the origin and target must retain a copy of these signed transactions in their XDR form, and the transactions can be stored in a publicly accessible location without concerns of tampering.
+Transaction 3 and Transaction 4 are created and signed by the escrow account by the origin. The origin then gives the transaction, in [XDR form](https://developer.digitalbits.io/frontier/reference/xdr.html), to the target to sign using the destination account. The target then publishes them for the origin to [review](https://laboratory.livenet.digitalbits.io/#xdr-viewer?type=TransactionEnvelope&network=test) and save in a safe location. Once signed by both parties, these transactions cannot be modified. Both the origin and target must retain a copy of these signed transactions in their XDR form, and the transactions can be stored in a publicly accessible location without concerns of tampering.
 
 Transaction 3 and Transaction 4 are created signed before the escrow account is funded, and have the same transaction number. This is done to ensure that the two parties are in agreement. If circumstances were to change before one of these two transaction are submitted, both the origin and the target need to authorize transactions utilizing the escrow account. This is represented by the requirement of the signatures of both the destination account and the escrow account. 
 

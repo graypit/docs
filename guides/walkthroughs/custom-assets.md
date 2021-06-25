@@ -6,7 +6,7 @@ In order to distribute a custom asset or token on the DigitalBits Network, three
 
 Most of the DigitalBits documentation is centered on financial institutions as anchors. An anchor is an entity that acts as a bridge between existing currencies and the DigitalBits Network, and involves setting up systems like a compliance server and a bridge server. It is not necessary to become an anchor in order to create custom assets and tokens on the DigitalBits Network. 
 
-The following presents a breakdown of the transactions required to create a custom token. The transactions can be translated to API requests or can be executed using [DigitalBits Laboratory](https://developer.digitalbits.io/lab/).
+The following presents a breakdown of the transactions required to create a custom token. The transactions can be translated to API requests or can be executed using [DigitalBits Laboratory](https://laboratory.livenet.digitalbits.io).
 
 
 ## Steps 
