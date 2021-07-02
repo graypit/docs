@@ -439,10 +439,10 @@ You can read more about the details of assets in the [assets overview](https://g
 
 Now that you can send and receive payments using DigitalBits’s API, you’re on your way to writing all kinds of amazing financial software. Experiment with other parts of the API, then read up on more detailed topics:
 
-- [Become an anchor](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../anchor/)
-- [Security](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../security.md)
-- [Federation](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../concepts/federation.md)
-- [Compliance](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../compliance-protocol.md)
+- [Become an anchor](../anchor/)
+- [Security](../security.md)
+- [Federation](../concepts/federation.md)
+- [Compliance](../compliance-protocol.md)
 
 <div class="sequence-navigation">
   <a class="button button--previous" href="create-account.html">Back to Step 2: Create an Account</a>
