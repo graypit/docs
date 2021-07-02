@@ -25,5 +25,5 @@ The DigitalBits network is a worldwide collection of DigitalBits Cores, each mai
 
 All these DigitalBits Cores—the network of nodes—eventually agree on sets of transactions. Each transaction on the network costs a small fee: 100 nibbs (0.00001 <abbr title="digitalbits">XDB</abbr>). This fee helps prevent bad actors from spamming the network. 
 
-To help you test your tools and applications, Digitalbits.io operates a small test network and Frontier instance. [Get started with the testnet.](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/test-net.md)
+To help you test your tools and applications, Digitalbits.io operates a small test network and Frontier instance. [Get started with the testnet.](../concepts/test-net.md)
  

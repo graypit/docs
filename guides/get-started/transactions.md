@@ -2,7 +2,7 @@
 title: Send and Receive Money
 ---
 
-Now that you have an account, you can send and receive funds through the DigitalBits network. If you haven’t created an account yet, read [step 2 of the Get Started guide](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/create-account.md).
+Now that you have an account, you can send and receive funds through the DigitalBits network. If you haven’t created an account yet, read [step 2 of the Get Started guide](./create-account.md).
 
 Most of the time, you’ll be sending money to someone else who has their own account. For this interactive guide, however, you should make a second account to transact with using the same method you used to make your first account.
 
@@ -131,7 +131,7 @@ What exactly happened there? Let’s break it down.
 
     </code-example>
 
-2. Load data for the account you are sending from. An account can only perform one transaction at a time[^5] and has something called a [**sequence number**,](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/accounts.md#sequence-number) which helps DigitalBits verify the order of transactions. A transaction’s sequence number needs to match the account’s sequence number, so you need to get the account’s current sequence number from the network.
+2. Load data for the account you are sending from. An account can only perform one transaction at a time[^5] and has something called a [**sequence number**,](../concepts/accounts.md#sequence-number) which helps DigitalBits verify the order of transactions. A transaction’s sequence number needs to match the account’s sequence number, so you need to get the account’s current sequence number from the network.
 
     <code-example name="Load Source Account">
 
@@ -183,7 +183,7 @@ What exactly happened there? Let’s break it down.
 
     You should also note that the amount is a string rather than a number. When working with extremely small fractions or large values, [floating point math can introduce small inaccuracies](https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems). Since not all systems have a native way to accurately represent extremely small or large decimals, DigitalBits uses strings as a reliable way to represent the exact amount across any system.
 
-5. Optionally, you can add your own metadata, called a [**memo,**](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../concepts/transactions.md#memo) to a transaction. DigitalBits doesn’t do anything with this data, but you can use it for any purpose you’d like. If you are a bank that is receiving or sending payments on behalf of other people, for example, you might include the actual person the payment is meant for here.
+5. Optionally, you can add your own metadata, called a [**memo,**](../concepts/transactions.md#memo) to a transaction. DigitalBits doesn’t do anything with this data, but you can use it for any purpose you’d like. If you are a bank that is receiving or sending payments on behalf of other people, for example, you might include the actual person the payment is meant for here.
 
     <code-example name="Add a Memo">
 
@@ -431,30 +431,30 @@ One of the amazing things about the DigitalBits network is that you can send and
 
 While DigitalBits’s native asset, digitalbits, is fairly simple, all other assets can be thought of like a credit issued by a particular account. In fact, when you trade US dollars on the DigitalBits network, you don’t actually trade US dollars—you trade US dollars *from a particular account.* That’s why the assets in the example above had both a `code` and an `issuer`. The `issuer` is the ID of the account that created the asset. Understanding what account issued the asset is important—you need to trust that, if you want to redeem your dollars on the DigitalBits network for actual dollar bills, the issuer will be able to provide them to you. Because of this, you’ll usually only want to trust major financial institutions for assets that represent national currencies.
 
-DigitalBits also supports payments sent as one type of asset and received as another. You can send Nigerian naira to a friend in Germany and have them receive euros. These multi-currency transactions are made possible by a built-in market mechanism where people can make offers to buy and sell different types of assets. DigitalBits will automatically find the best people to exchange currencies with in order to convert your naira to euros. This system is called [distributed exchange](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../concepts/exchange.md).
+DigitalBits also supports payments sent as one type of asset and received as another. You can send Nigerian naira to a friend in Germany and have them receive euros. These multi-currency transactions are made possible by a built-in market mechanism where people can make offers to buy and sell different types of assets. DigitalBits will automatically find the best people to exchange currencies with in order to convert your naira to euros. This system is called [distributed exchange](../concepts/exchange.md).
 
-You can read more about the details of assets in the [assets overview](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../concepts/assets.md).
+You can read more about the details of assets in the [assets overview](../concepts/assets.md).
 
 ## What Next?
 
 Now that you can send and receive payments using DigitalBits’s API, you’re on your way to writing all kinds of amazing financial software. Experiment with other parts of the API, then read up on more detailed topics:
 
-- [Become an anchor](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../anchor/)
-- [Security](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../security.md)
-- [Federation](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../concepts/federation.md)
-- [Compliance](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../compliance-protocol.md)
+- [Become an anchor](../anchor/)
+- [Security](../security.md)
+- [Federation](../concepts/federation.md)
+- [Compliance](../compliance-protocol.md)
 
 <div class="sequence-navigation">
   <a class="button button--previous" href="create-account.html">Back to Step 2: Create an Account</a>
 </div>
 
 
-[^1]: A list of all the possible operations can be found on the [operations page](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../concepts/operations.md).
+[^1]: A list of all the possible operations can be found on the [operations page](../concepts/operations.md).
 
-[^2]: The full details on transactions can be found on the [transactions page](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../concepts/transactions.md).
+[^2]: The full details on transactions can be found on the [transactions page](../concepts/transactions.md).
 
 [^3]: The 100 nibbs is called DigitalBits’s **base fee**. The base fee can be changed, but a change in DigitalBits’s fees isn’t likely to happen more than once every several years. You can look up the current fees by [checking the details of the latest ledger](https://developer.digitalbits.io/frontier/reference/endpoints/ledgers-single.html).
 
 [^4]: Even though most responses from the Frontier REST API use JSON, most of the data in DigitalBits is actually stored in a format called XDR, or External Data Representation. XDR is both more compact than JSON and stores data in a predictable way, which makes signing and verifying an XDR-encoded message easier. You can get more details on [our XDR page](https://developer.digitalbits.io/frontier/reference/xdr.html).
 
-[^5]: In situations where you need to perform a high number of transactions in a short period of time (for example, a bank might perform transactions on behalf of many customers using one DigitalBits account), you can create several DigitalBits accounts that work simultaneously. Read more about this in [the guide to channels](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/../channels.md).
+[^5]: In situations where you need to perform a high number of transactions in a short period of time (for example, a bank might perform transactions on behalf of many customers using one DigitalBits account), you can create several DigitalBits accounts that work simultaneously. Read more about this in [the guide to channels](../channels.md).

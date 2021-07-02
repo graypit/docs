@@ -14,16 +14,16 @@ The following presents a breakdown of the transactions required to create a cust
 #### Transaction 1: Create the issuing account
 **Account**: source account  
 **Operations**:
-- [Create Account](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/list-of-operations.md#create-account): create issuing account in system
-	 - starting balance: [minimum balance](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/fees.md#minimum-account-balance) + [transaction fee](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/fees.md#transaction-fee)
+- [Create Account](../concepts/list-of-operations.md#create-account): create issuing account in system
+	 - starting balance: [minimum balance](../concepts/fees.md#minimum-account-balance) + [transaction fee](../concepts/fees.md#transaction-fee)
 
 **Signers**: source account
 
 #### Transaction 2: Create the distribution account
 **Account**: source account  
 **Operations**:
-- [Create Account](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/list-of-operations.md#create-account): create distribution account in system
-	 - starting balance: [minimum balance](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/fees.md#minimum-account-balance) including trustlines  
+- [Create Account](../concepts/list-of-operations.md#create-account): create distribution account in system
+	 - starting balance: [minimum balance](../concepts/fees.md#minimum-account-balance) including trustlines  
 
 **Signers**: source account
 
@@ -34,7 +34,7 @@ Transaction 1 and Transaction 2 are submitted to the network by the token creato
 #### Transaction 3: Creating Trust
 **Account**: distribution account  
 **Operations**:
-- [Change Trust](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/list-of-operations.md#change-trust): create a trustline to the issuing account
+- [Change Trust](../concepts/list-of-operations.md#change-trust): create a trustline to the issuing account
 	 - asset: asset code format
 	 	- code: asset code
 	 	- issuer account: issuing account
@@ -49,7 +49,7 @@ Transaction 3 is submitted to the network by the token creator. It creates a tru
 #### Transaction 4: Asset Creation
 **Account**: issuing account  
 **Operations**:
-- [Payment](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/list-of-operations.md#payment): give the distribution account the tokens
+- [Payment](../concepts/list-of-operations.md#payment): give the distribution account the tokens
 	 - destination: distribution account
 	 - asset: asset code format
 	 	- code: asset code
@@ -63,7 +63,7 @@ Transaction 4 is created and submitted to the network by the issuing account. In
 #### Transaction 5: Asset Creation
 **Account**: issuing account  
 **Operations**:
-- [Set Option - Home Domain](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/list-of-operations.md#set-options): set home domain of digitalbits.toml
+- [Set Option - Home Domain](../concepts/list-of-operations.md#set-options): set home domain of digitalbits.toml
 	 - home domain: domain location 
 
 **Signers**: issuing account
@@ -94,7 +94,7 @@ image="{url of an image to associate with the asset}"
 #### (OPTIONAL) Transaction A: Limit Token Supply
 **Account**: issuing account  
 **Operations**:
-- [Set Option - Thresholds & Weights](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/list-of-operations.md#set-options): remove all weights and thresholds
+- [Set Option - Thresholds & Weights](../concepts/list-of-operations.md#set-options): remove all weights and thresholds
 	 - master weight: 0
 	 - low threshold: 0
 	 - medium threshold: 0
@@ -113,7 +113,7 @@ Transaction A is created and submitted to the network by the issuing account. By
 #### Transaction 6: Token Distribution
 **Account**: distribution account  
 **Operations**:
-- [Manage Offer - Sell](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/list-of-operations.md#manage-offer): create an offer to sell the created tokens
+- [Manage Offer - Sell](../concepts/list-of-operations.md#manage-offer): create an offer to sell the created tokens
 	- selling: created asset code format
 		- code: asset code
 		- issuer account: issuer account
@@ -133,10 +133,10 @@ By submitting Transaction 6, the created token is listed on the decentralized ex
 
 
 ## Additional Examples:
-Examples for some of the transactions and more about issuing assets can be found [here](https://github.com/xdbfoundation/docs/blob/master/guides/issuing-assets.md). In addition, [this article](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/assets.md#anchors-issuing-assets) provides more in-depth explanations of key terms regarding asset creation. 
+Examples for some of the transactions and more about issuing assets can be found [here](../issuing-assets.md). In addition, [this article](../concepts/assets.md#anchors-issuing-assets) provides more in-depth explanations of key terms regarding asset creation. 
 
 ## Resources:
-- [Becoming an Anchor](https://github.com/xdbfoundation/docs/blob/master/guides/anchor/) - DigitalBits<span>.io
-- [Minimum Account Balance Calculation](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/fees.md#minimum-account-balance) - DigitalBits<span>.io
-- [Concept: digitalbits.toml](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/digitalbits-toml.md) - DigitalBits<span>.io
-- [Concept: Trustlines](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/assets.md#trustlines) - DigitalBits<span>.io
+- [Becoming an Anchor](../anchor/) - DigitalBits<span>.io
+- [Minimum Account Balance Calculation](../concepts/fees.md#minimum-account-balance) - DigitalBits<span>.io
+- [Concept: digitalbits.toml](../concepts/digitalbits-toml.md) - DigitalBits<span>.io
+- [Concept: Trustlines](../concepts/assets.md#trustlines) - DigitalBits<span>.io

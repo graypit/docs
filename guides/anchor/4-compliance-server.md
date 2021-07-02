@@ -5,7 +5,7 @@ sequence:
   next: 5-conclusion.md
 ---
 
-The task of an anchor is handling regulatory compliance, like Anti-Money Laundering (<abbr title="Anti-Money Laundering">AML</abbr>). To accomplish that, you should use the [DigitalBits compliance protocol](https://github.com/xdbfoundation/docs/tree/master/guides/../compliance-protocol.md), a standard way to exchange compliance information and pre-approve a transaction with another financial institution.
+The task of an anchor is handling regulatory compliance, like Anti-Money Laundering (<abbr title="Anti-Money Laundering">AML</abbr>). To accomplish that, you should use the [DigitalBits compliance protocol](../compliance-protocol.md), a standard way to exchange compliance information and pre-approve a transaction with another financial institution.
 
 You can write your own server that matches the compliance protocol, but DigitalBits.io also provides a [compliance server](https://github.com/xdbfoundation/bridge-server/blob/master/readme_compliance.md) that takes care of most of the work for you.
 
@@ -67,7 +67,7 @@ The configuration file lists both an `external_port` and an `internal_port`. The
 
 The internal port should *not* be publicly accessible. It is the port through which you initiate compliance operations and transmit private information. It’s up to you to keep this port secure through a firewall, a proxy, or some other means.
 
-You’ll also need to tell your bridge server that you now have a compliance server it can use. Update [`config_bridge.toml`](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/2-bridge-server.md#download-and-configure-bridge-server) with the address of your compliance server’s *internal* port:
+You’ll also need to tell your bridge server that you now have a compliance server it can use. Update [`config_bridge.toml`](2-bridge-server.md#download-and-configure-bridge-server) with the address of your compliance server’s *internal* port:
 
 <code-example name="config_bridge.toml">
 
@@ -438,6 +438,6 @@ For a more realistic test, set up a duplicate copy of your bridge, federation, a
 </nav>
 
 
-[^compliance_memos]: Compliance transactions with the bridge server don’t support the `memo` field. The actual transaction’s `memo` will store a hash used to verify that the transaction submitted to the DigitalBits network matches the one agreed upon during initial compliance checks. Your `extra_memo` data will be transmitted instead during the compliance checks. For details, see [the compliance protocol](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../compliance-protocol.md).
+[^compliance_memos]: Compliance transactions with the bridge server don’t support the `memo` field. The actual transaction’s `memo` will store a hash used to verify that the transaction submitted to the DigitalBits network matches the one agreed upon during initial compliance checks. Your `extra_memo` data will be transmitted instead during the compliance checks. For details, see [the compliance protocol](../compliance-protocol.md).
 
 [^ssl]: Requiring that public services are available via SSL helps keep things secure. While testing, you can get free certificates from http://letsencrypt.org. You can also generate your own self-signed certificates, but you must add them to all the computers in your tests.
