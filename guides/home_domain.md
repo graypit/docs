@@ -1,3 +1,7 @@
+---
+title: Nome Domain
+---
+
 # Home domain
 
 In order to make obvious that DigitalBits Network Node belongs to the domain following steps are required.
@@ -6,6 +10,7 @@ In order to make obvious that DigitalBits Network Node belongs to the domain fol
 
 2. Create account for the keypair specified in config file of your node. 
 For this, you need to make a transaction of type 'Create account' with destinaton
+
 being public key of your node keypair and at list minimum ammount needed to be on the account balance (20XDB for new account. See [minimum balance](./concepts/fees.md#minimum-account-balance)). As each transaction results in [fee](./concepts/fees.md), fund enough to be able to accomplish next step.
 
 3. Make a transaction of type 'Set options' and set option 'home_domain' to the domain, where your digitalbits.toml file is located. For example 'mycompany.com'
