@@ -2,11 +2,11 @@
 
 In order to make obvious that DigitalBits Network Node belongs to the domain following steps are required.
 
-1. Create file [digitalbits.toml](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/digitalbits-toml.md)
+1. Create file [digitalbits.toml](./concepts/digitalbits-toml.md)
 
 2. Create account for the keypair specified in config file of your node. 
 For this, you need to make a transaction of type 'Create account' with destinaton
-being public key of your node keypair and at list minimum ammount needed to be on the account balance (20XDB for new account. See [minimum balance](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/fees.md#minimum-account-balance)). As each transaction results in [fee](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/fees.md), fund enough to be able to accomplish next step.
+being public key of your node keypair and at list minimum ammount needed to be on the account balance (20XDB for new account. See [minimum balance](./concepts/fees.md#minimum-account-balance)). As each transaction results in [fee](./concepts/fees.md), fund enough to be able to accomplish next step.
 
 3. Make a transaction of type 'Set options' and set option 'home_domain' to the domain, where your digitalbits.toml file is located. For example 'mycompany.com'
 
@@ -69,7 +69,7 @@ put="aws s3 cp {0} s3://livenet-mycompany-s3bucket/livenet/3/{1}"
 
 ## digitalbits.toml
 
-After we ran our validator nodes, we need to upload [digitalbits.toml](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/digitalbits-toml.md) to out domain at path `<domain>./well-known/digitalbits.toml`
+After we ran our validator nodes, we need to upload [digitalbits.toml](./concepts/digitalbits-toml.md) to out domain at path `<domain>./well-known/digitalbits.toml`
 
 In our case, home domain is `example.digitalbits.io`, so the `digitalbits.toml` file should be located at URL `https://example.digitalbits.io/.well-known/digitalbits.toml`  command.
 

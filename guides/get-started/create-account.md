@@ -186,7 +186,7 @@ func main() {
 
 </code-example>
 
-Now that you’ve got an account, you can [start sending and receiving payments](https://github.com/xdbfoundation/docs/blob/master/guides/get-started/transactions.md).
+Now that you’ve got an account, you can [start sending and receiving payments](transactions.md).
 
 <div class="sequence-navigation">
   <a class="button button--previous" href="index.html">Back: DigitalBits Network Overview</a>
@@ -196,6 +196,6 @@ Now that you’ve got an account, you can [start sending and receiving payments]
 
 [^1]: A private key is still used to encrypt data and sign transactions. When you create a `KeyPair` object using a seed, the private key is immediately generated and stored internally.
 
-[^2]: Other features of DigitalBits, like [trust lines](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/assets.md#trustlines), require higher minimum balances. For more on minimum balances, see [fees](https://github.com/xdbfoundation/docs/blob/master/guides/concepts/fees.md#minimum-account-balance)
+[^2]: Other features of DigitalBits, like [trust lines](../concepts/assets.md#trustlines), require higher minimum balances. For more on minimum balances, see [fees](../concepts/fees.md#minimum-account-balance)
 
 

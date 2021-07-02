@@ -4,7 +4,7 @@ title: DigitalBits.toml
 
 # Introduction
 
-The `digitalbits.toml` file is used to provide a common place where the Internet can find information about your domain's DigitalBits integration. Any website can publish DigitalBits network information. You can announce your validation key, your [federation](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/federation.md) server, peers you are running, your quorum set, if you are a anchor, etc.
+The `digitalbits.toml` file is used to provide a common place where the Internet can find information about your domain's DigitalBits integration. Any website can publish DigitalBits network information. You can announce your validation key, your [federation](./federation.md) server, peers you are running, your quorum set, if you are a anchor, etc.
 
 The digitalbits.toml file is a text file in the [TOML format](https://github.com/toml-lang/toml).
 
@@ -66,7 +66,7 @@ This file is UTF-8 with Dos-, UNIX-, or Mac-style end of lines.
 Blank lines and lines beginning with '#' are ignored.
 Undefined sections are reserved.
 All sections are optional.
-Many of these sections reflect what would be listed in your [digitalbits-core.cfg](https://github.com/xdbfoundation/DigitalBits/blob/master/docs/digitalbits-core_example.cfg)
+Many of these sections reflect what would be listed in your [digitalbits-core.cfg](https://github.com/xdbfoundation/blob/master/docs/digitalbits-core_example.cfg)
 
 ```toml
 # Sample digitalbits.toml

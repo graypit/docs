@@ -4,13 +4,13 @@ sequence:
   next: 2-bridge-server.md
 ---
 
-Anchors are entities that people trust to hold their deposits and [issue credits](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../issuing-assets.md) into the DigitalBits network for those deposits. All money transactions in the DigitalBits network (except digitalbits) occur in the form of credit issued by anchors, so anchors act as a bridge between existing currencies and the DigitalBits network. Most anchors are organizations like banks, savings institutions, farmers’ co-ops, central banks, and remittance companies.
+Anchors are entities that people trust to hold their deposits and [issue credits](../issuing-assets.md) into the DigitalBits network for those deposits. All money transactions in the DigitalBits network (except digitalbits) occur in the form of credit issued by anchors, so anchors act as a bridge between existing currencies and the DigitalBits network. Most anchors are organizations like banks, savings institutions, farmers’ co-ops, central banks, and remittance companies.
 
 Before continuing, you should be familiar with:
 
-- [Issuing assets](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../issuing-assets.md), the most basic activity of an anchor.
-- [Federation](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/federation.md), which allows a single DigitalBits account to represent multiple people.
-- [Compliance](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../compliance-protocol.md), if you are subject to any financial regulation.
+- [Issuing assets](../issuing-assets.md), the most basic activity of an anchor.
+- [Federation](../concepts/federation.md), which allows a single DigitalBits account to represent multiple people.
+- [Compliance](../compliance-protocol.md), if you are subject to any financial regulation.
 
 
 ## Account Structure
@@ -20,7 +20,7 @@ As an anchor, you should maintain at least two accounts:
 - An **issuing account** used only for issuing and destroying assets.
 - A **base account** used to transact with other DigitalBits accounts. It holds a balance of assets issued by the *issuing account*.
 
-Create them on the test network using the [laboratory](https://laboratory.livenet.digitalbits.io) or the steps from the [“get started” guide](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../get-started/create-account.md).
+Create them on the test network using the [laboratory](https://laboratory.livenet.digitalbits.io) or the steps from the [“get started” guide](../get-started/create-account.md).
 
 For this guide, we’ll use the following keys:
 
@@ -45,7 +45,7 @@ There are two simple ways to account for your customers’ funds:
 
     This approach simplifies bookkeeping by utilizing the DigitalBits network instead of your own internal systems. It can also allow your customers a little bit more control over how their account works in DigitalBits.
 
-2. Use [federation](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/federation.md) and the [`memo`](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/transactions.md#memo) field in transactions to send and receive payments on behalf of your customers. In this approach, transactions intended for your customers are all made using your *base account*. The `memo` field of the transaction is used to identify the actual customer a payment is intended for.
+2. Use [federation](../concepts/federation.md) and the [`memo`](../concepts/transactions.md#memo) field in transactions to send and receive payments on behalf of your customers. In this approach, transactions intended for your customers are all made using your *base account*. The `memo` field of the transaction is used to identify the actual customer a payment is intended for.
 
     Using a single account requires you to do additional bookkeeping, but means you have fewer keys to manage and more control over accounts. If you already have existing banking systems, this is the simplest way to integrate DigitalBits with them.
 
@@ -94,7 +94,7 @@ When someone is sending a transaction to you, the flow is slightly different:
 5. The bridge server monitors the DigitalBits network for the transaction and sends it to your compliance server to verify that it was the same transaction you approved in step 3.1.
 6. The bridge server contacts a service you implement to notify you about the transaction. You can use this step to update your customer’s account balances.
 
-**While these steps can seem complicated, DigitalBits’s bridge, federation, and compliance services do most of the work.** You only need to implement four callbacks and create a [digitalbits.toml](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/digitalbits-toml.md) file where others can find the URL of your services.
+**While these steps can seem complicated, DigitalBits’s bridge, federation, and compliance services do most of the work.** You only need to implement four callbacks and create a [digitalbits.toml](../concepts/digitalbits-toml.html) file where others can find the URL of your services.
 
 In the rest of this guide, we’ll walk through setting up each part of this infrastructure step by step.
 

@@ -20,18 +20,18 @@ The fee for a transaction is the number of operations the transaction contains m
 
 For example, a transaction that allows trust on an account’s trustline *(operation 1)* and sends a payment to that account *(operation 2)* would have a fee of $$2 * [base fee] = 200 nibbs$$.
 
-DigitalBits deducts the entire fee from the transaction’s [source account](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/transactions.md#source-account), regardless of which accounts are involved in each operation or who signed the transaction.
+DigitalBits deducts the entire fee from the transaction’s [source account](./transactions.md#source-account), regardless of which accounts are involved in each operation or who signed the transaction.
 
 
 ### Transaction Limits
 
 Each DigitalBits node usually limits the number of transactions that it will propose to the network when a ledger closes. If too many transactions are submitted, nodes propose the transactions with the highest fees for the ledger’s transaction set. Transactions that aren’t included are held for a future ledger, when fewer transactions are waiting.
 
-See [transaction life cycle](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/transactions.md#life-cycle) for more information.
+See [transaction life cycle](./transactions.md#life-cycle) for more information.
 
 ## Fee Pool
 
-The fee pool is the lot of digitalbits collected from [transaction fees](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/fees.md#transaction-fee).
+The fee pool is the lot of digitalbits collected from [transaction fees](./fees.md#transaction-fee).
 
 DigitalBits does not retain these digitalbits. They are distributed into the DigitalBits Algorithmic Pool. 
 

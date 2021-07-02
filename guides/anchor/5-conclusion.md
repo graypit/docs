@@ -27,12 +27,12 @@ As you prepare to move your services into production and support transactions on
 While you’ve now learned to handle the core operations of an anchor, there are many more things anchors might want to learn about or should consider:
 
 - [Operate your own node and frontier server on the DigitalBits network](https://developer.digitalbits.io/digitalbits-core/software/admin.html). Doing so makes you less reliant on other providers and makes the whole DigitalBits network stronger.
-- Read our guide on [security](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../security.md).
-- Make offers to [buy and sell assets on the distributed exchange](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/exchange.md).
-- Explore [multisignature systems](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../concepts/multi-sig.md) to make critical accounts more secure.
-- Use [channels](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../channels.md) to submit more transactions at a time.
+- Read our guide on [security](../security.md).
+- Make offers to [buy and sell assets on the distributed exchange](../concepts/exchange.md).
+- Explore [multisignature systems](../concepts/multi-sig.md) to make critical accounts more secure.
+- Use [channels](../channels.md) to submit more transactions at a time.
 - Talk with other DigitalBits developers in [DigitalBits’s Slack community](http://slack.digitalbits.io/)
-- [Contribute](https://github.com/xdbfoundation/docs/tree/master/guides/anchor/../contributing.md) your own fixes and improvements to DigitalBits software.
+- [Contribute](../contributing.md) your own fixes and improvements to DigitalBits software.
 
 <nav class="sequence-navigation">
   <a rel="prev" href="4-compliance-server.md">Back: Compliance Server</a>

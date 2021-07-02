@@ -51,7 +51,7 @@ Federation requests are http `GET` requests with the following form:
 Supported types:
 
  - **name**: Example: `https://YOUR_FEDERATION_SERVER/federation?q=joe*digitalbits.io&type=name`
- - **forward**: Used for forwarding the payment on to a different network or different financial institution. The other parameters of the query will vary depending on what kind of institution is the ultimate destination of the payment and what you as the forwarding anchor supports. Your [digitalbits.toml](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/digitalbits-toml.html) file should specify what parameters you expect in a `forward` federation request. If you are unable to forward or the other parameters in the request are incorrect you should return an error to this effect. Example request:   `https://YOUR_FEDERATION_SERVER/federation?type=forward&forward_type=bank_account&swift=BOPBPHMM&acct=2382376`
+ - **forward**: Used for forwarding the payment on to a different network or different financial institution. The other parameters of the query will vary depending on what kind of institution is the ultimate destination of the payment and what you as the forwarding anchor supports. Your [digitalbits.toml](./digitalbits-toml.html) file should specify what parameters you expect in a `forward` federation request. If you are unable to forward or the other parameters in the request are incorrect you should return an error to this effect. Example request:   `https://YOUR_FEDERATION_SERVER/federation?type=forward&forward_type=bank_account&swift=BOPBPHMM&acct=2382376`
  - **id**: *not supported by all federation servers* Reverse federation will return the federation record of the DigitalBits address associated with the given account ID. In some cases this is ambiguous. For instance if an anchor sends transactions on behalf of its users the account id will be of the anchor and the federation server won't be able to resolve the particular user that sent the transaction. In cases like that you may need to use **txid** instead. Example: `https://YOUR_FEDERATION_SERVER/federation?q=GD6WU64OEP5C4LRBH6NK3MHYIA2ADN6K6II6EXPNVUR3ERBXT4AN4ACD&type=id`
  - **txid**: *not supported by all federation servers* Will return the federation record of the sender of the transaction if known by the server. Example: `https://YOUR_FEDERATION_SERVER/federation?q=c1b368c00e9852351361e07cc58c54277e7a6366580044ab152b8db9cd8ec52a
 &type=txid`
@@ -89,7 +89,7 @@ Every other http status code will be considered an error. The body should contai
 ```
 
 ## Looking up federation provider via a home domain entry
-Accounts may optionally have a [home domain](https://github.com/xdbfoundation/docs/tree/master/guides/concepts/accounts.md#home-domain) specified. This allows an account to programmatically specify where is the main federation provider for that account.
+Accounts may optionally have a [home domain](./accounts.md#home-domain) specified. This allows an account to programmatically specify where is the main federation provider for that account.
 
 ## Caching
 
