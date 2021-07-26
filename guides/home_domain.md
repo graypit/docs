@@ -1,5 +1,5 @@
 ---
-title: Nome Domain
+title: Home Domain
 ---
 
 # Home domain
