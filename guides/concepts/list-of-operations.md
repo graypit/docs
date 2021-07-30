@@ -17,7 +17,7 @@ For a description of how operations work in DigitalBits, see [Operations](./oper
 
 
 ## Create Account
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.createAccount) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/CreateAccountOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#CreateAccountBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.createAccount) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/CreateAccountOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#CreateAccountBuilder)
 
 This operation creates and funds a new account with the specified starting balance.
 
@@ -45,7 +45,7 @@ Possible errors:
 
 
 ## Payment
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.payment) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/PaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#PaymentBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.payment) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/PaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#PaymentBuilder)
 
 Sends an amount in a specific asset to a destination account.
 
@@ -76,7 +76,7 @@ Possible errors:
 |PAYMENT_NO_ISSUER| -9| The issuer of the asset does not exist.|
 
 ## Path Payment
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.pathPayment) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/PathPaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#PayWithPath)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.pathPayment) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/PathPaymentOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#PayWithPath)
 
 Sends an amount in a specific asset to a destination account through a path of offers. This allows the asset sent (e.g., 450 XDB) to be different from the asset received (e.g, 6 BTC).
 
@@ -113,7 +113,7 @@ Possible errors:
 |PATH_PAYMENT_OVER_SENDMAX| -12| The paths that could send `destination amount` of `destination asset` would exceed `send max`.|
 
 ## Manage Offer
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.manageOffer) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/ManageOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ManageOfferBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.manageOffer) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/ManageOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ManageOfferBuilder)
 
 Creates, updates, or deletes an offer.
 
@@ -153,7 +153,7 @@ Possible errors:
 |MANAGE_OFFER_LOW_RESERVE| -12| The account creating this offer does not have enough XDB. For every offer an account creates, the minimum amount of XDB that account must hold will increase.|
 
 ## Create Passive Offer
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.createPassiveOffer) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/CreatePassiveOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ManageOfferBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.createPassiveOffer) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/CreatePassiveOfferOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ManageOfferBuilder)
 
 A passive offer is an offer that does not act on and take a reverse offer of equal price. Instead, they only take offers
 of lesser price. For example, if an offer exists to buy 5 BTC for 30 XDB, and you make a passive offer to buy 30 XDB for 5 BTC,
@@ -198,7 +198,7 @@ Possible errors:
 
 
 ## Set Options
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.setOptions) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/SetOptionsOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#SetOptionsBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.setOptions) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/SetOptionsOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#SetOptionsBuilder)
 
 This operation sets the options for an account.
 
@@ -237,7 +237,7 @@ Possible errors:
 |SET_OPTIONS_INVALID_HOME_DOMAIN| -9| Home domain is malformed.|
 
 ## Change Trust
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.changeTrust) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/ChangeTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ChangeTrustBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.changeTrust) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/ChangeTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ChangeTrustBuilder)
 
 Creates, updates, or deletes a trustline.  For more on trustlines, please refer to the [assets documentation](./assets.md).
 
@@ -262,7 +262,7 @@ Possible errors:
 
 
 ## Allow Trust
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.allowTrust) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/AllowTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#AllowTrustBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.allowTrust) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/AllowTrustOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#AllowTrustBuilder)
 
 Updates the `authorized` flag of an existing trustline. This can only be called by the issuer of a trustline's [asset](./assets.md).
 
@@ -288,7 +288,7 @@ Possible errors:
 |ALLOW_TRUST_CANT_REVOKE| -4| The source account is trying to revoke the trustline of the `trustor`, but it cannot do so.|
 
 ## Account Merge
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.accountMerge) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/AccountMergeOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#AccountMergeBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.accountMerge) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/AccountMergeOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#AccountMergeBuilder)
 
 Transfers the native balance (the amount of XDB an account holds) to another account and removes the source account from the ledger.
 
@@ -312,7 +312,7 @@ Possible errors:
 
 
 ## Manage Data
-[JavaScript](http://DigitalBitsOrg.github.io/js-digitalbits-sdk/Operation.html#.manageData) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/ManageDataOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ManageDataBuilder)
+[JavaScript](http://xdbfoundation.github.io/xdb-digitalbits-sdk/Operation.html#.manageData) | [Java](http://DigitalBitsOrg.github.io/java-digitalbits-sdk/io/digitalbits/sdk/ManageDataOperation.Builder.html) | [Go](https://godoc.org/github.com/xdbfoundation/go/build#ManageDataBuilder)
 
 Allows you to set,modify or delete a Data Entry (name/value pair) that is attached to a particular account. An account can have an arbitrary amount of DataEntries attached to it. Each DataEntry increases the minimum balance needed to be held by the account.
 

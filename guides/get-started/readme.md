@@ -9,7 +9,7 @@ Using the DigitalBits network, you can build mobile wallets, banking tools, smar
 
 **Most applications interact with the DigitalBits network through [Frontier](https://developer.digitalbits.io/frontier/reference/),** a RESTful HTTP API server. Frontier gives you a straightforward way to submit transactions, check accounts, and subscribe to events. Because it’s just HTTP, you can communicate with Frontier using your web browser, simple command line tools like cURL, or the DigitalBits SDK for your favorite programming language.
 
-Digitalbits.io maintains [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk) and [Go](https://github.com/xdbfoundation/go/tree/master/services/frontier)-based SDKs for communicating with Frontier. There are also community-maintained SDKs for Ruby, Python and C#.
+Digitalbits.io maintains [JavaScript](https://github.com/xdbfoundation/xdb-digitalbits-sdk) and [Go](https://github.com/xdbfoundation/go/tree/master/services/frontier)-based SDKs for communicating with Frontier. There are also community-maintained SDKs for Ruby, Python and C#.
 
 ## Network Backbone: DigitalBits Core
 

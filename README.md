@@ -76,8 +76,8 @@ There are three different kind of links, and each different kind of link has a s
           <li>links to external sites (like https://www.google.com/)</li>
         </ul>
       </td>
-      <td>https://www.digitalbits.io/developers/js-digitalbits-base/learn/building-transactions.html</td>
-      <td>https://www.digitalbits.io/developers/js-digitalbits-base/learn/building-transactions.html</td>
+      <td>https://www.digitalbits.io/developers/xdb-digitalbits-base/learn/building-transactions.html</td>
+      <td>https://www.digitalbits.io/developers/xdb-digitalbits-base/learn/building-transactions.html</td>
     </tr>
   </tbody>
 </table>
