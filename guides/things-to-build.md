@@ -102,7 +102,7 @@ Build a library in your favorite language:
 - Other languages
 
 Or contribute to our existing SDKs:
-- [JavaScript](https://github.com/xdbfoundation/js-digitalbits-sdk)
+- [JavaScript](https://github.com/xdbfoundation/xdb-digitalbits-sdk)
 - [Go](https://github.com/xdbfoundation/go)
 - [Java](https://github.com/xdbfoundation/java-digitalbits-sdk)
 - [Python](https://github.com/xdbfoundation/py-digitalbits-base/)

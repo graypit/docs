@@ -41,7 +41,7 @@ Between ledger closings, all the nodes in the network are collecting transaction
 
 ## Life cycle
 
-1. **Creation**: The user creates a transaction, fills out all the fields, gives it the correct sequence number, adds whatever operations it wants, etc. Try it with [js-digitalbits-sdk](https://developer.digitalbits.io/js-digitalbits-sdk/reference/).
+1. **Creation**: The user creates a transaction, fills out all the fields, gives it the correct sequence number, adds whatever operations it wants, etc. Try it with [xdb-digitalbits-sdk](https://developer.digitalbits.io/xdb-digitalbits-sdk/reference/).
 
 2. **Signing**: Once the transaction is filled out, all the needed signatures must be collected and added to the transaction envelope. Commonly it's just the signature of the account doing the transaction, but more complicated setups can require collecting signatures from multiple parties. See [multi-sig](./multi-sig.md).
 

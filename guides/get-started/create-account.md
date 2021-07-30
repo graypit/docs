@@ -14,7 +14,7 @@ Because the seed must be kept secret, the first step in creating an account is c
 
 ```js
 // create a completely new and unique pair of keys
-// see more about KeyPair objects: https://DigitalBitsOrg.github.io/js-digitalbits-sdk/Keypair.html
+// see more about KeyPair objects: https://xdbfoundation.github.io/xdb-digitalbits-sdk/Keypair.html
 var pair = DigitalBitsSdk.Keypair.random();
 
 pair.secret();

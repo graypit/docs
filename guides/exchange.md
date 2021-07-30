@@ -3,7 +3,7 @@ title: Set Up an Exchange
 ---
 
 # Adding DigitalBits to your Exchange
-This guide will walk you through the integration steps to add DigitalBits to your exchange. This example uses Node.js and the [JS DigitalBits SDK](https://github.com/xdbfoundation/js-digitalbits-sdk), but it should be easy to adapt to other languages.
+This guide will walk you through the integration steps to add DigitalBits to your exchange. This example uses Node.js and the [JS DigitalBits SDK](https://github.com/xdbfoundation/xdb-digitalbits-sdk), but it should be easy to adapt to other languages.
 
 There are many ways to architect an exchange. This guide uses the following design:
  - `issuing account`: One DigitalBits account that holds the majority of customer deposits offline.
@@ -27,7 +27,7 @@ If your exchange doesn't see a lot of volume, you don't need to set up your own 
 ```
 
 ### Issuing account
-An issuing account is typically used to keep the bulk of customer funds secure. An issuing account is a DigitalBits account whose secret keys are not on any device that touches the Internet. Transactions are manually initiated by a human and signed locally on the offline machine—a local install of `js-digitalbits-sdk` creates a `tx_blob` containing the signed transaction. This `tx_blob` can be transported to a machine connected to the Internet via offline methods (e.g., USB or by hand). This design makes the issuing account secret key much harder to compromise.
+An issuing account is typically used to keep the bulk of customer funds secure. An issuing account is a DigitalBits account whose secret keys are not on any device that touches the Internet. Transactions are manually initiated by a human and signed locally on the offline machine—a local install of `xdb-digitalbits-sdk` creates a `tx_blob` containing the signed transaction. This `tx_blob` can be transported to a machine connected to the Internet via offline methods (e.g., USB or by hand). This design makes the issuing account secret key much harder to compromise.
 
 ### Base account
 A base account contains a more limited amount of funds than an issuing account. A base account is a DigitalBits account used on a machine that is connected to the Internet. It handles the day-to-day sending and receiving of digitalbits. The limited amount of funds in a base account restricts loss in the event of a security breach.
@@ -164,7 +164,7 @@ function handlePaymentResponse(record) {
 
 
 ## Submitting withdrawals
-When a user requests a lumen withdrawal from your exchange, you must generate a DigitalBits transaction to send them the digitalbits. Here is additional documentation about [Building Transactions](https://developer.digitalbits.io/js-digitalbits-base/learn/building-transactions.html).
+When a user requests a lumen withdrawal from your exchange, you must generate a DigitalBits transaction to send them the digitalbits. Here is additional documentation about [Building Transactions](https://developer.digitalbits.io/xdb-digitalbits-base/learn/building-transactions.html).
 
 The function `handleRequestWithdrawal` will queue up a transaction in the exchange's `DigitalBitsTransactions` table whenever a withdrawal is requested.
 

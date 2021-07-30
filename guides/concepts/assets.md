@@ -65,7 +65,7 @@ The smallest non-zero amount unit is `0.0000001` (one ten-millionth) represented
 The numbers are represented as `int64`s. Amount values are stored as only signed integers to avoid bugs that arise from mixing signed and unsigned integers.
 
 ### Relevance in Frontier and DigitalBits client libraries
-In Frontier and client side libraries such as `js-digitalbits-sdk`, the integer encoded value is abstracted away. Many APIs expect amount unit value (the scaled up amount displayed to end users).
+In Frontier and client side libraries such as `xdb-digitalbits-sdk`, the integer encoded value is abstracted away. Many APIs expect amount unit value (the scaled up amount displayed to end users).
 
 ### Maintaining precision with "big number" libraries
 Some programming languages (such as JavaScript) have problems with maintaining precision on a number amount. It is recommended to use "big number" libraries that can record arbitrary precision decimal numbers without a loss of precision.

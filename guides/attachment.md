@@ -62,7 +62,7 @@ hash.update(JSON.stringify(attachment));
 var memoHashHex = hash.digest('hex');
 ```
 
-To add the hash to your transaction use the [`TransactionBuilder.addMemo`](http://digitalbitsorg.github.io/js-digitalbits-base/TransactionBuilder.html#addMemo) method.
+To add the hash to your transaction use the [`TransactionBuilder.addMemo`](http://xdbfoundation.github.io/xdb-digitalbits-base/TransactionBuilder.html#addMemo) method.
 
 ## Sending Attachments
 
