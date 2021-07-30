@@ -19,7 +19,7 @@ The bridge server requires a MySQL or PostgreSQL database in order to track and 
 
 ## Download and Configure Bridge Server
 
-Next, [download the latest bridge server](https://cloudsmith.io/~xdb-foundation/repos/digitalbits-federation/packages/) for your platform. Install the executable anywhere you like. In the same directory, create a file named `bridge.cfg`. This will store the configuration for the bridge server. It should look something like:
+Next, [download the latest bridge server](https://cloudsmith.io/~xdb-foundation/repos/digitalbits-bridge/packages/) for your platform. Install the executable anywhere you like. In the same directory, create a file named `bridge.cfg`. This will store the configuration for the bridge server. It should look something like:
 
 <code-example name="bridge.cfg">
 

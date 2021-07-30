@@ -25,7 +25,7 @@ The compliance server requires a MySQL or PostgreSQL database in order to save t
 
 ## Download and Configure Compliance Server
 
-Start by [downloading the latest compliance server](https://github.com/xdbfoundation/bridge-server/releases) for your platform and install the executable anywhere you like. In the same directory, create a file named `config_compliance.toml`. This will store the configuration for the compliance server. It should look something like:
+Start by [downloading the latest compliance server](https://cloudsmith.io/~xdb-foundation/repos/digitalbits-compliance/packages/) for your platform and install the executable anywhere you like. In the same directory, create a file named `config_compliance.toml`. This will store the configuration for the compliance server. It should look something like:
 
 <code-example name="config_compliance.toml">
 

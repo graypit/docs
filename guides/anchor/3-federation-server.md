@@ -33,7 +33,7 @@ Where Tunde’s DigitalBits address would be `tunde_adebayo*your_org.com`.
 
 ## Download and Configure Federation Server
 
-Next, [download the latest federation server](https://github.com/xdbfoundation/go/releases) for your platform. Install the executable anywhere you like. In the same directory, create a file named `federation.cfg`. This will store the configuration for the server. It should look something like:
+Next, [download the latest federation server](https://cloudsmith.io/~xdb-foundation/repos/digitalbits-federation/packages/) for your platform. Install the executable anywhere you like. In the same directory, create a file named `federation.cfg`. This will store the configuration for the server. It should look something like:
 
 <code-example name="federation.cfg">
 
