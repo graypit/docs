@@ -63,7 +63,7 @@ config.frontier = 'https://frontier.testnet.digitalbits.io';
 
 // Include the JS DigitalBits SDK
 // It provides a client-side interface to Frontier
-var DigitalBitsSdk = require('digitalbits-sdk');
+var DigitalBitsSdk = require('xdb-digitalbits-sdk');
 // uncomment for live network:
 // DigitalBitsSdk.Network.usePublicNetwork();
 
