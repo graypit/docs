@@ -21,7 +21,7 @@ DigitalBits stores and communicates transaction data in a binary format called X
 <code-example name="Submitting a Transaction">
 
 ```js
-var DigitalBitsSdk = require('digitalbits-sdk');
+var DigitalBitsSdk = require('xdb-digitalbits-sdk');
 DigitalBitsSdk.Network.useTestNetwork();
 var server = new DigitalBitsSdk.Server('https://frontier.testnet.digitalbits.io');
 var sourceKeys = DigitalBitsSdk.Keypair
@@ -238,7 +238,7 @@ A simple program that watches the network for payments and prints each one might
 <code-example name="Receive Payments">
 
 ```js
-var DigitalBitsSdk = require('digitalbits-sdk');
+var DigitalBitsSdk = require('xdb-digitalbits-sdk');
 
 var server = new DigitalBitsSdk.Server('https://frontier.testnet.digitalbits.io');
 var accountId = 'GC2BKLYOOYPDEFJKLKY6FNNRQMGFLVHJKQRGNSSRRGSMPGF32LHCQVGF';

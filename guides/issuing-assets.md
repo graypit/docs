@@ -57,7 +57,7 @@ Sending and receiving custom assets is very similar to [sending and receiving di
 <code-example name="Send Custom Assets">
 
 ```js
-var DigitalBitsSdk = require('digitalbits-sdk');
+var DigitalBitsSdk = require('xdb-digitalbits-sdk');
 DigitalBitsSdk.Network.useTestNetwork();
 var server = new DigitalBitsSdk.Server('https://frontier.testnet.digitalbits.io');
 
@@ -162,7 +162,7 @@ Second, use the [set options operation](https://developer.digitalbits.io/guides/
 <code-example name="Set Home Domain">
 
 ```js
-var DigitalBitsSdk = require('digitalbits-sdk');
+var DigitalBitsSdk = require('xdb-digitalbits-sdk');
 DigitalBitsSdk.Network.useTestNetwork();
 var server = new DigitalBitsSdk.Server('https://frontier.testnet.digitalbits.io');
 

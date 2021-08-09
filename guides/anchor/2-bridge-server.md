@@ -259,7 +259,7 @@ To test that your receive callback works, let’s try sending 1 USD to a custome
 <code-example name="Test Receive Callback">
 
 ```js
-var DigitalBitsSdk = require('digitalbits-sdk');
+var DigitalBitsSdk = require('xdb-digitalbits-sdk');
 var server = new DigitalBitsSdk.Server('https://frontier.testnet.digitalbits.io');
 var sourceKeys = DigitalBitsSdk.Keypair.fromSecret(
   'SCZANGBA5YHTNYVVV4C3U252E2B6P6F5T3U6MM63WBSBZATAQI3EBTQ4');
