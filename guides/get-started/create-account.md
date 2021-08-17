@@ -15,7 +15,8 @@ Because the seed must be kept secret, the first step in creating an account is c
 ```js
 // create a completely new and unique pair of keys
 // see more about KeyPair objects: https://xdbfoundation.github.io/xdb-digitalbits-sdk/Keypair.html
-var pair = DigitalBitsSdk.Keypair.random();
+const DigitalBitsSdk = require("xdb-digitalbits-sdk");
+const pair = DigitalBitsSdk.Keypair.random();
 
 pair.secret();
 // SAV76USXIJOBMEQXPANUOQM6F5LIOTLPDIDVRJBFFE2MDJXG24TAPUU7
@@ -68,19 +69,24 @@ To create a test account, send Friendbot the public key you created. It’ll cre
 ```js
 // The SDK does not have tools for creating test accounts, so you'll have to
 // make your own HTTP request.
-var request = require('request');
-request.get({
-  url: 'https://frontier.testnet.digitalbits.io/friendbot',
-  qs: { addr: pair.publicKey() },
-  json: true
-}, function(error, response, body) {
-  if (error || response.statusCode !== 200) {
-    console.error('ERROR!', error || body);
+
+// If you're trying this on Node, install the `node-fetch` library and
+// uncomment the next line:
+// const fetch = require('node-fetch');
+
+(async function main() {
+  try {
+    const response = await fetch(
+      `https://frontier.testnet.digitalbits.io/friendbot?addr=${encodeURIComponent(
+        pair.publicKey()
+      )}`
+    );
+    const responseJSON = await response.json();
+    console.log("SUCCESS! You have a new account :)\n", responseJSON);
+  } catch (e) {
+    console.error("ERROR!", e);
   }
-  else {
-    console.log('SUCCESS! You have a new account :)\n', body);
-  }
-});
+})();
 ```
 
 ```java
@@ -133,14 +139,13 @@ Now for the last step: Getting the account’s details and checking its balance.
 <code-example name="Getting account details">
 
 ```js
-var server = new DigitalBitsSdk.Server('https://frontier.testnet.digitalbits.io');
+const server = new DigitalBitsSdk.Server("https://frontier.testnet.digitalbits.io");
 
 // the JS SDK uses promises for most actions, such as retrieving an account
-server.loadAccount(pair.publicKey()).then(function(account) {
-  console.log('Balances for account: ' + pair.publicKey());
-  account.balances.forEach(function(balance) {
-    console.log('Type:', balance.asset_type, ', Balance:', balance.balance);
-  });
+const account = await server.loadAccount(pair.publicKey());
+console.log("Balances for account: " + pair.publicKey());
+account.balances.forEach(function (balance) {
+  console.log("Type: ", balance.asset_type, ", Balance: ", balance.balance);
 });
 ```
 
