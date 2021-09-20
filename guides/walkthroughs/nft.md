@@ -1,4 +1,4 @@
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--SaFVyJRM--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r3kk2hlvfx8nlosj2vfk.jpg" />
+<img src="./img/logo.webp" />
 
 # How to develop an NFT using DigitalBits Blockchain 
 
@@ -11,9 +11,9 @@ A non-fungible token (NFT) is a unit of data stored on a digital ledger, called 
 
 DigitalBits is a distributed ledger technology that allows anyone to build low-cost and fast financial services. DigitalBits has some of the best documentation and tutorials to help a blockchain developer get started quickly.
 
-## What is a lumen? 
+## What is a digitalbit? 
 
-Lumens are the tokens used by the wider DigitalBits Network, to send sums of money and convert currency.
+Digitalbits are the tokens used by the wider DigitalBits Network, to send sums of money and convert currency.
 
 ##  What is a DigitalBits Laboratory? 
 
@@ -31,16 +31,21 @@ We will build a Non-Fungible Token using two keypair accounts issuer and distrib
 
 #  These are the steps that we will cover 
 
-## 1. Create a 2 keypair accounts
-## 2. Fund the accounts
-## 3. Create a trustline
-## 4. Create the NFT
-## 5. Lock Issuing account
-## 6. Sign and Submit blockchain transaction
-## 7. Explore the Accounts and NFT 
+### 1. Create a 2 keypair accounts
+
+### 2. Fund the accounts
+
+### 3. Create a trustline
+
+### 4. Create the NFT
+
+### 5. Lock Issuing account
+
+### 6. Sign and Submit blockchain transaction
+
 #  Step 1: Creating two DigitalBits keypair accounts 
 
-Firstly , let's go to the [DigitalBits laboratory link](https://laboratory.livenet.DigitalBits.io/) and make sure you are using testnet 
+Firstly , let's go to the [DigitalBits laboratory link](https://laboratory.livenet.digitalbits.io/) and make sure you are using testnet 
 
 <img src="./img/lab.png" />
 
@@ -50,6 +55,7 @@ Click the <mark>Generate Keypair</mark> blue button to generate the first key pa
 <img src="./img/gen_key.png" />
 
 In my case, these are the public keys for the two accounts I created. Make sure you don't mix up the two accounts 😜😜
+
 ```text
 Distributor
 Public Key	GBYIJUGETN5NFORVIRM563KGOLM72EZTNPTGOJFTT6A7AB6F2IRGOGAP
@@ -60,9 +66,9 @@ Public Key	GAHPAZ4LHGAXW6OQQ2PICM2XSOSCZBWFE4JDGU5TTIEAXO3JL3ABV2YH
 
 # Step 2: Funding the two DigitalBits keypair accounts
 
-Next , we fund both accounts with 10,000 lumens on the test network using Friendbot.
+Next, we fund both accounts with 10,000 digitalbits on the test network using Friendbot.
 
-Just add the public key for the account you want to fund and click on <mark>Get test network lumens.</mark>
+Just add the public key for the account you want to fund and click on <mark>Get test network digitalbits.</mark>
 
 <img src="./img/fund1.png" />
 
@@ -122,22 +128,6 @@ Below is the Signatures field where we add the issuer secret id in the <mark>Add
 
 
 Lastly, we submit the transaction as shown by the images below: 
-
-===
-
-# Step 6: Exploring the DigitalBits accounts and NFT 
-
-===
-
-You made it to the final step!! 🤗 Here we navigate to DigitalBits Explorer to check out all accounts . Feel free to play around using the public ids of the issue and distributor. 
-
-===
-===
-
-You also check out the NFT we created using this link https://DigitalBits.expert/explorer/testnet/asset/DigitalBitsNFT-GBT6JLUJ5JB2LVSRLR24EBQVIQAX23EMGJ4S7F3OF6B7GNOOCXWZTXDG
-
-===
-===
 
 # Conclusion🤓 
 
