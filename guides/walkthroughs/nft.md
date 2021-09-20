@@ -106,10 +106,6 @@ Lastly , we add metadata to our NFT which in this case is an image from Imgur . 
 
 <img src="./img/builder4.png" />
 
-Quick one checkout  [IPFS](https://ipfs.io/) and how it's used in the distributed web. The InterPlanetary File System (IPFS) is a protoco and peer-to-peer network for storing and sharing data in a distributed file system. Whe building a real-world NFT I recommend using IPFS.
-
-<img src="./img/ipfs.png" />
-
 #  Step 5: Locking the issuing account 
 
 In step 5 , we go on the <mark>Operation Type</mark> field and select the <mark>Set Options</mark> option from the dropdown. Let's go to the <mark>Master Weight</mark> field and add a value of `0` .This will prevent the issuer from minting more tokens in the future and it's optional.
