@@ -21,9 +21,9 @@ The DigitalBits Laboratory is a set of tools that enables people to try out and 
 
 #  Foolish Assumptions 
 
-### 1. You have an internet connection
-### 2. You have a laptop
-### 3. You are eager to learn
+1. You have an internet connection
+2. You have a laptop
+3. You are eager to learn
 
 #  Quick Summary 
 
@@ -31,18 +31,17 @@ We will build a Non-Fungible Token using two keypair accounts issuer and distrib
 
 #  These are the steps that we will cover 
 
-### 1. Create a 2 keypair accounts
+[1. Create a 2 keypair accounts](#step-1-creating-two-digitalbits-keypair-accounts)
 
-### 2. Fund the accounts
+[2. Fund the accounts](#step-2-funding-the-two-digitalbits-keypair-accounts)
 
-### 3. Create a trustline
+[3. Create a trustline](#step-3-creating-a-trustline-between-the-issuer-and-distributor)
 
-### 4. Create the NFT
+[4. Create the NFT](#step-4-creating-the-non-funguiable-token)
 
-### 5. Lock Issuing account
+[5. Lock Issuing account](#step-5-locking-the-issuing-account)
 
-### 6. Sign and Submit blockchain transaction
-
+[6. Sign and Submit blockchain transaction](#step-6-signing-and-submitting-transaction)
 #  Step 1: Creating two DigitalBits keypair accounts 
 
 Firstly , let's go to the [DigitalBits laboratory link](https://laboratory.livenet.digitalbits.io/) and make sure you are using testnet 
