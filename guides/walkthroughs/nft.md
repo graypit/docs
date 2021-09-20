@@ -21,9 +21,9 @@ The DigitalBits Laboratory is a set of tools that enables people to try out and 
 
 #  Foolish Assumptions 
 
-## 1. You have an internet connection
-## 2. You have a laptop
-## 3. You are eager to learn
+### 1. You have an internet connection
+### 2. You have a laptop
+### 3. You are eager to learn
 
 #  Quick Summary 
 
@@ -128,6 +128,7 @@ Below is the Signatures field where we add the issuer secret id in the <mark>Add
 
 
 Lastly, we submit the transaction as shown by the images below: 
+<img src="./img/signed1.png" />
 
 # Conclusion🤓 
 
